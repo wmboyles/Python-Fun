@@ -1,0 +1,61 @@
+from math import log
+from random import randint
+
+
+'''
+The computer runs a binary search algorithm, which works in O(log_2(n)) time
+'''
+def CompGuess():
+    Max = int(input("I am thinking of an ingeter between 1 and: "))+1
+    M=Max
+    Min = 1
+    correct = False
+    guesses=0
+    gp=[]
+    while correct==False:
+        guess = int((Max+Min)/2)
+        if(guess in gp or Min>Max):
+            print("You changed your number :(")
+            break
+        r = input("Is your number higher, lower, or equal than %i?"%guess)
+        if(r=="equal" or r.lower()=="="):
+            correct=True
+        elif(Max-Min==1):Min=Max
+        elif(r.lower()=="h" or r.lower()=="higher"):
+            Min=guess
+        elif(r.lower()=="l" or r.lower()=="lower"):
+            Max=guess
+        guesses+=1
+        gp.append(guess)
+        
+    print("It took me %i guesses."%(guesses))
+    print("I should always guess right in %i or fewer guesses."%int(log((M-1)*2,2)))
+
+def YouGuess():
+    Max = int(input("Max number: "))
+    num = randint(1,Max)
+    guesses=1
+    solved=False
+    while(solved==False):
+        guess = int(input("Guess: "))
+        if(guess==num):
+            print("Correct in %i guesses."%guesses)
+            solved=True
+        elif(guess<num):
+            print("Too Low")
+            guesses+=1
+        elif(guess>num):
+            print("Too High")
+            guesses+=1
+
+def main():
+    who = input("Who will guess numbers?")
+    if(who.lower()=="me" or who.lower()=="i" or who.lower()=="1"): YouGuess()
+    if(who.lower()=="computer" or who.lower()=="c" or who.lower()=="comp" or who.lower()=="2" or who.lower()=="you"): CompGuess()
+
+    if input("Play Again?").lower()=="yes" or 'y' or "1":
+        print("\n\n\n")
+        main()
+
+main()
+input()
