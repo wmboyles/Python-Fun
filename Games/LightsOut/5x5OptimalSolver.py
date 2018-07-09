@@ -3,32 +3,33 @@ from random import randint
 
 StateBoard = np.zeros((5,5),dtype=int) #Make a blank 5x5 board (Null State). This will be the state of play
 OperationBoard = np.zeros((5,5), dtype=int) #This will be the board that records what was clicked
+
 '''
 The board runs from 0 to 4 in both directions. X is the horizontal (first number)
-Y is the vertical (second number). The top left is (0,0). The bottom right is (4,4)
+Y is the vertical (second number). The top-left is (0,0). The bottom-right is (4,4)
 '''
 
 def Click(x,y): #Function changes the state of lights (x,y) and adjacent lights
-    #Changes the state of selected light. NumPy lists the Y cordinate first.
+    #Changes the state of selected light.
     if StateBoard[y,x]==0: StateBoard[y,x]=1
     else: StateBoard[y,x]=0
 
-    #To the left
+    #Change light to the left
     if x>0:
         if StateBoard[y,x-1]==0: StateBoard[y,x-1]=1
         else: StateBoard[y,x-1]=0
 
-    #To the right
+    #Change light to the right
     if x<4:
         if StateBoard[y,x+1]==0: StateBoard[y,x+1]=1
         else: StateBoard[y,x+1]=0
 
-    #Above
+    #Change light above
     if y>0:
         if StateBoard[y-1,x]==0: StateBoard[y-1,x]=1
         else: StateBoard[y-1,x]=0
 
-    #Below
+    #Change light below
     if y<4:
         if StateBoard[y+1,x]==0: StateBoard[y+1,x]=1
         else: StateBoard[y+1,x]=0
@@ -83,7 +84,9 @@ def main():
 
     LightChase() #Solve board suboptimally
 
-    Nulls = [np.array([[1,1,0,1,1],[0,0,0,0,0],[1,1,0,1,1],[0,0,0,0,0],[1,1,0,1,1]]),np.array([[1,0,1,0,1],[1,0,1,0,1],[0,0,0,0,0],[1,0,1,0,1],[1,0,1,0,1]]),np.array([[0,1,1,1,0],[1,0,1,0,1],[1,1,0,1,1],[1,0,1,0,1],[0,1,1,1,0]])]
+    Nulls = [np.array([[1,1,0,1,1],[0,0,0,0,0],[1,1,0,1,1],[0,0,0,0,0],[1,1,0,1,1]]),
+            np.array([[1,0,1,0,1],[1,0,1,0,1],[0,0,0,0,0],[1,0,1,0,1],[1,0,1,0,1]]),
+            np.array([[0,1,1,1,0],[1,0,1,0,1],[1,1,0,1,1],[1,0,1,0,1],[0,1,1,1,0]])]
     i=0
 
     while i<3:
