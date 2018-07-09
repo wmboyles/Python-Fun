@@ -1,45 +1,47 @@
-'''Note: this solving algorithm does not solve optimally'''
-
+'''
+Note: this solving algorithm does not solve optimally
+'''
 
 import numpy as np
 import random
 
-Board=np.zeros((5,5),dtype=int)     #Make Blank 5x5 board
-clicks=0
-    
+Board=np.zeros((5,5),dtype=int)     #Blank 5x5 board
+clicks=0    #Click count
+
+#Apply a click to the board at the given coordinate
 def Click(x,y):
     #Change light of selected button
     if Board[y-1,x-1]==0: Board[y-1,x-1]=1
     else: Board[y-1,x-1]=0
 
-    #Change light to the left
+    #Change light to the left (if applicable)
     if x>1:
         if Board[y-1,x-2]==0: Board[y-1,x-2]=1
         else: Board[y-1,x-2]=0
         
-    #Change light to the right
+    #Change light to the right (if applicable)
     if x<5:
         if Board[y-1,x]==0:  Board[y-1,x]=1
         else: Board[y-1,x]=0
         
-    #Change light above
+    #Change light above  (if applicable)
     if y>1:
         if Board[y-2,x-1]==0: Board[y-2,x-1]=1
         else: Board[y-2,x-1]=0
         
-    #Change light below
+    #Change light below  (if applicable)
     if y<5:
         if Board[y,x-1]==0: Board[y,x-1]=1
         else: Board[y,x-1]=0
 
 
-def Manual(): #manually input points to be clicked
+def ManualClick(): #Manually input points to be clicked
     x, y = input("(x,y): ").replace(","," ").split() #get particular light to click
-    x, y = int(x), int(y) #convert to int
+    x, y = int(x), int(y)
     Click(x,y) #click the light
 
 
-def Manual2(): #manually input which lights are "on"
+def ManualOn(): #manually input which lights are "on"
     x, y = input("(x,y): ").replace(","," ").split()
     x, y = int(x), int(y)
 
@@ -47,6 +49,7 @@ def Manual2(): #manually input which lights are "on"
     else: Board[y-1,x-1]=0
 
     
+#A sub-optimal solving strategy
 def LightChase():
     clicks=0
     
@@ -99,22 +102,21 @@ def LightChase():
                 
     return clicks
 
-
     
 def main():
     level = int(input("Level: "))
-    boards = int(input("Boards: "))
+    numBoards = int(input("Boards: "))
 
 
-    while boards>0:
-        #Create a random board by clicking randomly [level] times
+    while numBoards>0:
+        #Create a random board by clicking randomly level times
         for i in range(level): Click(random.randint(1,5),random.randint(1,5))
 
-        #Solve the board (suboptimally) and print #of clicks to solve
+        #Solve the board (suboptimally) and print number of clicks needed to solve
         solveClicks = LightChase()
         print(solveClicks)
         
-        boards-=1
+        numBoards-=1
 
 main()
 
