@@ -1,0 +1,117 @@
+##########   PyDrive GUIDE   ##########
+
+1) If PyDrive isn't already installed, do [pip install PyDrive]
+	a) You probably want to give sudo access
+
+2) Go the the APIs Consle here: https://console.developers.google.com/iam-admin/projects
+	a) and create a project
+	b) Search for 'Google Drive API', select the entry, and click 'Enable'
+	c) Select 'Credentials' from the left menu
+	d) click 'Create Credentials'
+	e) select 'OAuth 2.0 client ID'
+
+3) Fill out necessary parts
+	a) Product Name
+	b) Consent Form
+	
+
+4) Click 'Configure consent screen' and follow on-screen instructions
+
+5) When finished with above step:
+	a) Select the 'Application Type' to be [Web Application]
+	b) Enter a good name
+	c) Put [http://localhost:8080] for 'Authorized JavaScript origins'
+	d) Put [http://localhost:8080/] for 'Authorized redirect URI's' (remember the /)
+	e) Click 'Save' or 'Create'
+
+6) On the right-hand side of the credential listing:
+	a) Click 'Download JSON' (it's a download symbol)
+
+7) Next:
+	a) Rename this file [client_secrets.json]
+	b) Put it in the same folder as your eventual python script (Working Directory)
+ 
+8) Everything is ready for Coding
+
+
+###############     CODING     ###############
+
+### HOW TO UPLOAD A SINGLE FILE TO A SPECIFIED FOLDER ###
+1) Create a python file in the same folder as 'client_secrets.json'
+
+2) Write: [
+	from pydrive.auth import GoogleAuth
+	from pydrive.drive import GoogleDrive
+	
+	gauth = GoogleAuth()
+	gauth.LocalWebserverAuth()
+	
+	drive = GoogleDrive(gauth)
+	]
+
+3) In the web-version of Google Drive, create a folder where you will upload stuff
+
+4) Append to code and Run: [
+	file_list = drive.ListFile({'q': "'root' in parents and trashed=false"}).GetList()
+    	for file1 in file_list:       
+    	print 'title: %s, id: %s' % (file1['title'], file1['id'])
+	]
+
+5) Select the id of the folder you just created and copy it
+	a) it'll look something like: [id1NZoUlDlJd3HHg4yQeOsTdzGXXlaOtNta]
+
+6) Remove: [
+	file_list = drive.ListFile({'q': "'root' in parents and trashed=false"}).GetList()
+    	for file1 in file_list:       
+    	print 'title: %s, id: %s' % (file1['title'], file1['id'])
+	]
+
+7) Write: [fid = 'COPIED FOLDER ID']
+	a) That'll look like: [fid = 'id1NZoUlDlJd3HHg4yQeOsTdzGXXlaOtNta']
+
+8) Write: [
+	file = drive.CreateFile({"parents": [{"kind": "drive#fileLink", "id": fid}]})
+	file.SetContentFile('SOME LOCAL PATH TO A FILE YOU WANT TO UPLOAD')
+	file.Upload()
+	]
+	a) You'll have to use '\\' to specifiy a backslash (UniCode Escape)
+9) When this is ran, it will upload the specified file to the specified folder
+
+
+
+### HOW TO CREATE SUBFOLDER(S) ###
+
+1) If you don't already have this, write: [
+	from pydrive.auth import GoogleAuth
+	from pydrive.drive import GoogleDrive
+
+	gauth = GoogleAuth()
+	gauth.LocalWebserverAuth()
+
+	drive = GoogleDrive(gauth)
+	]
+
+2) If need to know the parent folder id, write: [
+	file_list = drive.ListFile({'q': "'root' in parents and trashed=false"}).GetList()
+	for file in file_list:
+		print("Name: %s, ID: %s'%(file['title'],file['id']))
+	]
+
+3) Copy the folder ID and write: [
+	fid = 'COPIED FOLDER ID'
+	]
+
+4) To create the metadata for a new folder, write: [
+	new_folder_metadata = {
+		'title': 'NEW FOLDER NAME',
+    		'mimeType': 'application/vnd.google-apps.folder',
+    		'parents': [{'kind': 'drive#fileLink', 'id': fid}]
+    	}
+
+	folder = drive.CreateFile(folder_metadata)
+	folder.Upload()
+	]
+
+##########################
+For other questions, read the following link. It explains pretty much everything.
+https://pythonhosted.org/PyDrive/
