@@ -1,11 +1,16 @@
 from json import load
 import sys
 
-def main(argv = None):
-    if argv is None or len(argv) == 0: ac = input("Area Code: ")
-    else: ac = argv
 
-    for arg in ac: findAreaCode(arg)
+def main(argv=None):
+    if argv is None or len(argv) == 0: 
+        ac = input("Area Code: ")
+        findAreaCode(ac)
+    else:
+        for arg in argv: findAreaCode(arg)
+    
+    main()
+
 
 def findAreaCode(ac):
     with open("northAmerica_areaCodes.json") as codes_Json:
@@ -15,12 +20,13 @@ def findAreaCode(ac):
                 printCode(code)
                 return
 
-        print("Could not find area code: "+ac+"\n")
+        print("Could not find area code: " + ac + "\n")
+
 
 def printCode(code):
-    print("Code: "+code['code'])
-    print("Location: "+code['state'])
-    print("Overlapping Codes: "+code['overlapping'])
+    print("Code: " + code['code'])
+    print("Location: " + code['state'])
+    print("Overlapping Codes: " + code['overlapping'])
     print()
         
         
