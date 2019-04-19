@@ -73,16 +73,16 @@ def sendMail(alias, fromAddr, pw, toaddr, subject="", message="", AttchFileList=
 
     print("Message Sent.")
 
-'''
+
 if __name__ == '__main__':
-    fromAlias = "William Boyles"
-    fromAddr = "williamboyles22900@gmail.com"
-    fromPW = "WilliamB2290"
-    toAddr = "wmboyle2@ncsu.edu"
-    subject = "Daily Security Summary"
-    message = "Here is your daily security summary. The motion video and all faces are attached in a zip file."
-    fileList = []
-    folderList = ["03-03-19"]
+    fromAlias = "FROM ALIAS"
+    fromAddr = "FROM ADDRESS"
+    fromPW = "FROM PASSWORD"
+    toAddr = "TO ADDRESS"
+    subject = "SUBJECT"
+    message = "MESSAGE"
+    fileList = [FILES]
+    folderList = [FOLDERS]
     
     sendMail(fromAlias, # From alias
              fromAddr,  # From address
@@ -93,4 +93,3 @@ if __name__ == '__main__':
              fileList,  # List of files to attach
              folderList # Folder to attach
     )
-'''
