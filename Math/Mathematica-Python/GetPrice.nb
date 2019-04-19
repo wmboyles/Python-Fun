@@ -1,0 +1,268 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8971,        260]
+NotebookOptionsPosition[      8188,        231]
+NotebookOutlinePosition[      8536,        246]
+CellTagsIndexPosition[      8493,        243]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Price", "[", "s_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"Interpreter", "[", "\"\<Company\>\"", "]"}], "[", "s", "]"}], 
+    "[", "\"\<Last\>\"", "]"}], "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"EmbedCode", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<s\>\"", "\[Rule]", " ", "\"\<String\>\""}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Price", "[", "#s", "]"}], "&"}]}], "]"}], ",", 
+   "\"\<Python\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.739318086929932*^9, 3.7393182386825953`*^9}, {
+  3.7393187379626637`*^9, 3.7393187778367057`*^9}, {3.739319954674596*^9, 
+  3.739319954968424*^9}, {3.7393200373270097`*^9, 3.739320068712944*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  FrameBox[
+   PanelBox[
+    TagBox[GridBox[{
+       {
+        StyleBox["\<\"Embeddable Code\"\>", "ControlStyle",
+         StripOnInput->False,
+         FontSize->Larger,
+         FontWeight->Bold,
+         FontColor->GrayLevel[0.3]]},
+       {
+        StyleBox["\<\"Use the code below to call the Wolfram Cloud function \
+from Python:\"\>",
+         StripOnInput->False,
+         FontColor->RGBColor[0.23, 0.23, 0.23]]},
+       {
+        FrameBox[
+         TagBox[GridBox[{
+            {
+             TagBox[GridBox[{
+                {
+                 TagBox[GridBox[{
+                    {
+                    StyleBox["\<\"Code\"\>", "ControlStyle",
+                    StripOnInput->False,
+                    FontWeight->Bold,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]},
+                    {
+                    StyleBox["\<\"\"\>",
+                    StripOnInput->False,
+                    FontColor->RGBColor[0.33, 0.33, 0.33]]}
+                   },
+                   DefaultBaseStyle->"Column",
+                   GridBoxAlignment->{"Columns" -> {{Left}}},
+                   
+                   GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+                  "Column"], 
+                 ItemBox[
+                  ButtonBox["\<\"Copy to Clipboard\"\>",
+                   
+                   Appearance:>FEPrivate`FrontEndResource[
+                    "FEExpressions", "GrayButtonNinePatchAppearance"],
+                   BaseStyle->"DialogStyle",
+                   
+                   ButtonFunction:>CopyToClipboard[
+                    "from urllib import urlencode\nfrom urllib2 import \
+urlopen\n\nclass WolframCloud:\n\n    def wolfram_cloud_call(self, **args):\n \
+       arguments = dict([(key, arg) for key, arg in args.iteritems()])\n      \
+  result = \
+urlopen(\"http://www.wolframcloud.com/objects/9458d71b-34ee-43ec-a35b-\
+1cfe0626ad92\", urlencode(arguments))\n        return result.read()\n\n    \
+def call(self, s):\n        textresult =  self.wolfram_cloud_call(s=s)\n      \
+  return textresult"],
+                   Evaluator->Automatic,
+                   FrameMargins->{{10, 10}, {0, 0}},
+                   ImageSize->Automatic,
+                   Method->"Queued"],
+                  Alignment->Right,
+                  StripOnInput->False]}
+               },
+               AutoDelete->False,
+               GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Top}}},
+               GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}}],
+              "Grid"]},
+            {
+             FrameBox[
+              PaneBox[Cell["\<\
+from urllib import urlencode
+from urllib2 import urlopen
+
+class WolframCloud:
+
+    def wolfram_cloud_call(self, **args):
+        arguments = dict([(key, arg) for key, arg in args.iteritems()])
+        result = \
+urlopen(\"http://www.wolframcloud.com/objects/9458d71b-34ee-43ec-a35b-\
+1cfe0626ad92\", urlencode(arguments))
+        return result.read()
+
+    def call(self, s):
+        textresult =  self.wolfram_cloud_call(s=s)
+        return textresult\
+\>",
+                Editable->False,
+                Deployed->False],
+               AppearanceElements->{},
+               ImageSize->{
+                 Scaled[1], 300},
+               Scrollbars->Automatic],
+              Background->GrayLevel[1],
+              BaseStyle->"StandardForm",
+              FrameStyle->RGBColor[0.69, 0.69, 0.69],
+              StripOnInput->False]}
+           },
+           DefaultBaseStyle->"Column",
+           GridBoxAlignment->{"Columns" -> {{Left}}},
+           GridBoxItemSize->{"Columns" -> {{Fit}}, "Rows" -> {{Fit}}},
+           GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.2, {0.5}}}],
+          "Column"],
+         Background->RGBColor[0.96, 0.96, 0.96],
+         FrameMargins->{{14, 14}, {14, 10}},
+         FrameStyle->RGBColor[0.69, 0.69, 0.69],
+         StripOnInput->False]}
+      },
+      DefaultBaseStyle->"Column",
+      GridBoxAlignment->{"Columns" -> {{Left}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+      GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {0.3, 0.4, 0.8, 1.5}}],
+     "Column"],
+    Background->RGBColor[0.87, 0.87, 0.87],
+    BaseStyle->{"Deploy"},
+    ImageSize->630],
+   Background->RGBColor[0.87, 0.87, 0.87],
+   FrameMargins->{{2, 2}, {1, 1}},
+   FrameStyle->RGBColor[0.76, 0.76, 0.76],
+   RoundingRadius->6,
+   StripOnInput->False],
+  EmbeddingObject[
+   Association[
+   "EnvironmentName" -> "Python", "CodeSection" -> 
+    Association[
+     "Content" -> 
+      "from urllib import urlencode\nfrom urllib2 import urlopen\n\nclass \
+WolframCloud:\n\n    def wolfram_cloud_call(self, **args):\n        arguments \
+= dict([(key, arg) for key, arg in args.iteritems()])\n        result = \
+urlopen(\"http://www.wolframcloud.com/objects/9458d71b-34ee-43ec-a35b-\
+1cfe0626ad92\", urlencode(arguments))\n        return result.read()\n\n    \
+def call(self, s):\n        textresult =  self.wolfram_cloud_call(s=s)\n      \
+  return textresult", "Title" -> Automatic, "Filename" -> "WolframCloud.py"], 
+    "CloudObject" -> 
+    CloudObject[
+     "https://www.wolframcloud.com/objects/9458d71b-34ee-43ec-a35b-\
+1cfe0626ad92"]]]]], "Output",
+ CellChangeTimes->{
+  3.739318800975388*^9, 3.7393199567154007`*^9, {3.7393200407970095`*^9, 
+   3.7393200701960897`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7393182999523325`*^9, 3.739318423324338*^9}, {
+  3.7393186917282763`*^9, 3.7393186978317504`*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ TemplateBox[{
+  "CCodeGenerate","wmreq",
+   "\"The expression \\!\\(\\*RowBox[{\\\"Price\\\"}]\\) requires Mathematica \
+to be evaluated.   The function will be generated but can be expected to fail \
+with a nonzero error code when executed.\"",2,59,18,18143778760158311713,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7393183933815613`*^9, 3.73931842386302*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7393186874347343`*^9, 3.739318687442729*^9}}],
+
+Cell["\<\
+
+\
+\>", "Print",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{3.7393184238920016`*^9, 3.7393186850970926`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7393183663061624`*^9, 3.7393183665370116`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7393183159671164`*^9, 3.739318315973128*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.739318297553713*^9, 3.7393182975627193`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.739318252233796*^9, 3.7393182530753345`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7393182065001755`*^9, 3.7393182065091114`*^9}}]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 795, 20, 50, "Input"],
+Cell[1378, 44, 5411, 137, 495, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6826, 186, 168, 3, 30, "Input"],
+Cell[6997, 191, 408, 8, 21, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7442, 204, 94, 1, 30, InheritFromParent],
+Cell[7539, 207, 144, 6, 37, "Print"]
+}, Open  ]],
+Cell[7698, 216, 96, 1, 30, InheritFromParent],
+Cell[7797, 219, 94, 1, 30, InheritFromParent],
+Cell[7894, 222, 94, 1, 30, InheritFromParent],
+Cell[7991, 225, 94, 1, 30, InheritFromParent],
+Cell[8088, 228, 96, 1, 30, InheritFromParent]
+}
+]
+*)
+
