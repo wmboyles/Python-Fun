@@ -53,9 +53,7 @@ def main():
     if(who.lower()=="me" or who.lower()=="i" or who.lower()=="1"): YouGuess()
     if(who.lower()=="computer" or who.lower()=="c" or who.lower()=="comp" or who.lower()=="2" or who.lower()=="you"): CompGuess()
 
-    if input("Play Again?").lower()=="yes" or 'y' or "1":
-        print("\n\n\n")
-        main()
+    input("Press ENTER to Play Again")
+    main()
 
-main()
-input()
+if __name__ == '__main__': main()
