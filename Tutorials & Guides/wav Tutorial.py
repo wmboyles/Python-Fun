@@ -25,7 +25,6 @@ import matplotlib.pyplot as plt
     The program below plots the sin wave of the approximation of square wave.
 '''
 
-
 '''
 N=168 #samples/sec
 x=range(N) #[0,1,2,3,...,N-1] -- N elements
@@ -44,14 +43,14 @@ plt.plot(x,y)   #The plot is calculated
 plt.show()      #The plot is displayed
 '''
 
-N=168 #samples/second
-x=range(N) #[0,1,2,...,N-1]
-y=N*[0] #[0,0,0...0]
+N = 168  # samples/second
+x = range(N)  # [0,1,2,...,N-1]
+y = N * [0]  # [0,0,0...0]
 for i in x:
-    if i<N/2: y[i]=1.0
-    else: y[i]=-1.0
+    if i < N / 2: y[i] = 1.0
+    else: y[i] = -1.0
 
-y=1313*y
+y = 1313 * y
 
 '''
     3 periods gives us 3*168/44100 ~= .011428 secs of audio.
@@ -62,13 +61,13 @@ y=1313*y
 
 import wave
 import struct
-fout=wave.open("sin1313.wav","w")
-fout.setnchannels(1) # Mono
-fout.setsampwidth(2) # Sample is 2 Bytes
-fout.setframerate(44100) # Sampling Frequency
-fout.setcomptype('NONE','Not Compressed')
-BinStr=b'' # Create a binary string of data
+fout = wave.open("sin1313.wav", "w")
+fout.setnchannels(1)  # Mono
+fout.setsampwidth(2)  # Sample is 2 Bytes
+fout.setframerate(44100)  # Sampling Frequency
+fout.setcomptype('NONE', 'Not Compressed')
+BinStr = b''  # Create a binary string of data
 for i in range(len(y)):
-    BinStr = BinStr + struct.pack('h',round(y[i]*20000))
+    BinStr = BinStr + struct.pack('h', round(y[i] * 20000))
 fout.writeframesraw(BinStr)
 fout.close()

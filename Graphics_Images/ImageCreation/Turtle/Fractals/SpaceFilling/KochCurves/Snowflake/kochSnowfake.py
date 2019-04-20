@@ -1,24 +1,28 @@
 from turtle import*
 
+
 def compliment(s):
-    out=""
+    out = ""
     for c in s:
-        if c=='0': out+='1'
-        else: out+='0'
+        if c == '0': out += '1'
+        else: out += '0'
     return out
 
+
 def getSnowflake(n):
-    snowflake='0'
+    snowflake = '0'
     for i in range(n):
-        snowflake+=compliment(snowflake)
+        snowflake += compliment(snowflake)
 
     return snowflake
 
+
 def prepare():
-    setup(700,700)
-    L=3**6
-    setworldcoordinates(-L,-L/2,0,L/2)
+    setup(700, 700)
+    L = 3 ** 6
+    setworldcoordinates(-L, -L / 2, 0, L / 2)
     bgcolor("black")
+
 
 def main():
     prepare()
@@ -31,10 +35,11 @@ def main():
     path = getSnowflake(15)
     for i in range(3):
         for e in path:
-            if e=='0': fd(1)
+            if e == '0': fd(1)
             else: lt(60)
         
     update()
+
 
 main()
 input()

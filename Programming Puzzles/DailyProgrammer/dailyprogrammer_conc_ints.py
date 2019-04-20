@@ -9,37 +9,39 @@ Leading zeroes, like 05 or 00 are not allowed
 import numpy as np
 from math import log10, floor
 
-challin = np.array([[420,34,19,71,341]])
+challin = np.array([[420, 34, 19, 71, 341]])
+
 
 def BiggestConcat1():
-    firstdigit = np.zeros((1,np.size(challin)),dtype=float)
+    firstdigit = np.zeros((1, np.size(challin)), dtype=float)
     digits = firstdigit
     elementsFD = digits
     ordered = digits
     out = ""
 
-    for i in range(0,np.size(challin)):
-        if(digits[0,i]!=0):
-            digits[0,i]= floor(log10(challin[0,i])+1)
-        else: digits[0,i]=0
+    for i in range(0, np.size(challin)):
+        if(digits[0, i] != 0):
+            digits[0, i] = floor(log10(challin[0, i]) + 1)
+        else: digits[0, i] = 0
 
-    digits = challin+digits
+    digits = challin + digits
 
-    for i in range(0,np.size(digits)):
-        if(digits[0,i]!=0):
-            moddiv = float((10**floor(log10(digits[0,i]))))
-            firstdigit[0,i]=(digits[0,i]-digits[0,1]%moddiv)/moddiv
-        else: firstdigit[0,i]=0
+    for i in range(0, np.size(digits)):
+        if(digits[0, i] != 0):
+            moddiv = float((10 ** floor(log10(digits[0, i]))))
+            firstdigit[0, i] = (digits[0, i] - digits[0, 1] % moddiv) / moddiv
+        else: firstdigit[0, i] = 0
 
     elementsFD = np.fliplr(np.argsort(firstdigit))
 
-    for i in range(0,np.size(challin)):
-        ordered[0,i] = challin[0,elementsFD[0,i]]
+    for i in range(0, np.size(challin)):
+        ordered[0, i] = challin[0, elementsFD[0, i]]
 
-    for i in range(0,np.size(ordered)):
-        out+=str(int(ordered[0,i]))
+    for i in range(0, np.size(ordered)):
+        out += str(int(ordered[0, i]))
 
     print(int(out))
+
     
 BiggestConcat1()
 '''

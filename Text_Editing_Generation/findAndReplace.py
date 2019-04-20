@@ -1,20 +1,20 @@
-def FandR(find,replace,filename,save):
+def FandR(find, replace, filename, save):
     print(filename)
     print("-------------------------------")
 
-    infile = open(str(filename),'r')
+    infile = open(str(filename), 'r')
     contents = infile.read()
     print(contents)
     print("-------------------------------")
     
-    with open(str(filename),'r') as infile:
+    with open(str(filename), 'r') as infile:
         contents = infile.read()
-        contents = contents.replace(str(find),str(replace))
+        contents = contents.replace(str(find), str(replace))
         print(contents)
         print("")
         
-    if(save==True):  
-        raw = open(str(filename),'w')
+    if(save == True):  
+        raw = open(str(filename), 'w')
         raw.write(contents)
         raw.close()
 
@@ -33,7 +33,6 @@ The file t read from is on the firsst line as follows:
 with open("filename.txt") as infile
 '''
 
-
-FandR("o","0","example.txt",True)
+FandR("o", "0", "example.txt", True)
 print("")
-FandR("O","()","example.txt",True)
+FandR("O", "()", "example.txt", True)

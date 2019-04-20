@@ -19,10 +19,13 @@ list, allowing an access at any index to be O(1). Duplicate and null (None) elem
 allowed. One can iterate through this list using for-in loops. Due to Python beging a
 dynamically typed language, elements of any type can be in the list.
 '''
+
+
 class arrayList:
     '''
     Constructs a new, empty array list of size 0.
     '''
+
     def __init__(self):
         self.__l = []
         self.__size = 0
@@ -30,11 +33,13 @@ class arrayList:
     '''
     Returns the size of the list, which is the number of elements within.
     '''
+
     def size(self): return self.__size
 
     '''
     Answers the question: Does the list have 0 elements?
     '''
+
     def isEmpty(self): return self.__size == 0
 
     '''
@@ -42,6 +47,7 @@ class arrayList:
 
     Note: this can be accomplished faster with binary search.
     '''
+
     def contains(self, value):
         for e in self.__l:
             if e == value: return True
@@ -52,6 +58,7 @@ class arrayList:
     Returns the index of the specified value in the list. If ths value is not end the list,
     this function returns -1.
     '''
+
     def indexOf(self, value):
         for i in range(self.__size):
             if self.__l[i] == value: return i
@@ -63,6 +70,7 @@ class arrayList:
     previously at the specified index. If the index parameter is outside the range of the
     list, this function raises an Exception.
     '''
+
     def set(self, index, value):
         if index < 0 or index >= self.__size: raise Exception
         
@@ -74,6 +82,7 @@ class arrayList:
     Returns the element at a spefified index in the list. If the index parameter is outside
     the range of the list, this function raises an Exception.
     '''
+
     def get(self, index):
         if index < 0 or index >= self.__size: raise Exception
         
@@ -86,18 +95,19 @@ class arrayList:
     successfully added to the list. If the index parameter is outside the range of the list,
     this function raises an Exception.
     '''
-    def add(self, value, index = None):
+
+    def add(self, value, index=None):
         returnTrue = False
         if index is None:
             index = self.__size
             returnTrue = True
         elif index < 0 or index > self.__size: raise Exception
 
-        #Create empty spot
+        # Create empty spot
         self.__l.append(None)
         
-        #right-shift elements
-        for i in range(self.__size, index - 1, -1): self.__l[i] = self.__l[i-1]
+        # right-shift elements
+        for i in range(self.__size, index - 1, -1): self.__l[i] = self.__l[i - 1]
             
         self.__l[index] = value
         self.__size += 1
@@ -109,6 +119,7 @@ class arrayList:
     iterable's call to next() will be added to earlier positions in the list. If the
     iterable parameter is not in fact iterable, this function raises an Exception.
     '''
+
     def addAll(self, iterable):
         try:
             for item in iterable: self.add(item)
@@ -120,14 +131,15 @@ class arrayList:
     element in the list is removed and returned. If the index parameter is outside the range
     of the list, this function raises an Exception.
     '''
-    def remove(self, index = None):
+
+    def remove(self, index=None):
         if index is None: index = self.__size - 1
         elif index < 0 or index >= self.__size: raise Exception
 
-        #remove element
+        # remove element
         self.__l[index] = None
-        #left-shift elements
-        for i in range(index, self.__size - 1): self.__l[i] = self.__l[i+1]
+        # left-shift elements
+        for i in range(index, self.__size - 1): self.__l[i] = self.__l[i + 1]
 
         self.__size -= 1
         self.__l.pop()
@@ -136,12 +148,14 @@ class arrayList:
     '''
     Returns a string representation of the list, which is a comma-seperated list of values.
     '''
+
     def toString(self):
         return ', '.join(str(s) for s in self.__l)
 
     '''
     Empties all elements from the list, resetting the size to 0.
     '''
+
     def clear(self):
         self.__l = None
         self.__size = 0
@@ -150,6 +164,7 @@ class arrayList:
     Returns an iterator that allows this list to be used in for-in loops. It does so by
     creating an idea of a current index, which starts at 0.
     '''
+
     def __iter__(self):
         self.__currentIdx = 0
         return self
@@ -158,12 +173,12 @@ class arrayList:
     Using fields crated by the iter() function, the function returns the next value in the
     list from the current index, and advances the current index by 1 element.
     '''
+
     def __next__(self):
         if self.__currentIdx >= self.__size: raise StopIteration
         ret = self.__l[self.__currentIdx]
         self.__currentIdx += 1
         return ret
-            
         
 '''
 A linked list is a linear data structure composed of nodes, where each node contains a piece of data
@@ -171,7 +186,10 @@ and a reference to the next node in the list. A reference to the front of the li
 linked list, along with the size. Due to the one-way nature of the connection between nodes, accessing
 an element is O(n). Due to Python beging dynamically typed, elements of any type can be in the list.
 '''
+
+
 class linkedList:
+
     def __init__(self):
         self.__front = None
         self.__size = 0
@@ -179,22 +197,26 @@ class linkedList:
     '''
     Returns the size of the list, which is the number of elements within.
     '''
+
     def size(self): return self.__size
 
     '''
     Answers the question: Does the list have 0 elements?
     '''
+
     def isEmpty(self): return self.__size == 0
 
     '''
     Answers the question: Does the list contain this value? This function is part of a
     recursive pair with a private function.
     '''
+
     def contains(self, value): return self.__contains(value, self.__front)
 
     '''
     This function is part of a recursive pair with a public function.
     '''
+
     def __contains(self, value, head):
         if head is None: return False
         if head.data == value: return True
@@ -204,6 +226,7 @@ class linkedList:
     Returns the index of the specified value in the list. If ths value is not end the list,
     this function returns -1.
     '''
+
     def indexOf(self, value):
         current = self.__front
         for i in range(self.__size):
@@ -219,6 +242,7 @@ class linkedList:
     Returns the element at a spefified index in the list. If the index parameter is outside
     the range of the list, this function raises an Exception.
     '''
+
     def get(self, index):
         if index < 0 or index >= self.__size: raise Exception("Index out of bounds")
         
@@ -231,6 +255,7 @@ class linkedList:
     previously at the specified index. If the index parameter is outside the range of the
     list, this function raises an Exception.
     '''
+
     def set(self, index, value):
         if index < 0 or index >= self.__size: Exception
 
@@ -245,7 +270,8 @@ class linkedList:
     If the index parameter is outside the range of the list, this function raises an
     Exception.
     '''
-    def add(self, value, index = None):
+
+    def add(self, value, index=None):
         returnTrue = False
         
         if index is None:
@@ -259,6 +285,7 @@ class linkedList:
     '''
     This function is part of a recursive pair with a private function.
     '''
+
     def __add(self, idx, value, currIdx, head):
         if idx == 0: self.__front = self.Node(value, self.__front)
         elif self.__front is None: raise Exception
@@ -270,6 +297,7 @@ class linkedList:
     iterable's call to next() will be added to earlier positions in the list. If the
     iterable parameter is not in fact iterable, this function raises an Exception.
     '''
+
     def addAll(self, iterable):
         try:
             for item in iterable: self.add(item)
@@ -279,6 +307,7 @@ class linkedList:
     If the index parameter is outside the range of the list, this function raises an
     Exception.
     '''
+
     def remove(self, index):
         if index < 0 or index >= self.__size: raise Exception
 
@@ -300,6 +329,7 @@ class linkedList:
     Returns a string representation of the list, which is a comma-seperated list of values.
     This function is part of a recursive pair with a private function.
     '''
+
     def toString(self):
         if self.__front is None: return ""
         else: return self.__toString(self.__front)
@@ -307,6 +337,7 @@ class linkedList:
     '''
     This function is part of a recursive pair with a public function.
     '''
+
     def __toString(self, head):
         if head.next is None: return str(head.data)
         else: return str(head.data) + ", " + self.__toString(head.next)
@@ -314,6 +345,7 @@ class linkedList:
     '''
     Empties all elements from the list, resetting the size to 0.
     '''
+
     def clear(self):
         self.__front = None
         self.__size = 0
@@ -322,6 +354,7 @@ class linkedList:
     Returns an iterator that allows this list to be used in for-in loops. It does so by
     creating an idea of a current index, which starts at 0.
     '''
+
     def __iter__(self):
         self.__current = self.__front
         return self
@@ -330,6 +363,7 @@ class linkedList:
     Using fields crated by the iter() function, the function returns the next value in the
     list from the current index, and advances the current index by 1 element.
     '''
+
     def __next__(self):
         if self.__current is None: raise StopIteration
         ret = self.__current.data
@@ -340,11 +374,12 @@ class linkedList:
     A Node is the smallest element of a linked list. It contains a peice of data and a reference to
     the next Node in the list.
     '''
+
     class Node:
-        def __init__(self, data, next = None):
+
+        def __init__(self, data, next=None):
             self.data = data
             self.next = next
-    
     
     
 if __name__ == '__main__':

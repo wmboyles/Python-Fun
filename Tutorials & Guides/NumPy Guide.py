@@ -12,7 +12,6 @@ array_np = np.arange(1000) #1000 element numpy array (integers)
 print(array_np.size*array_np.itemsize) #get #of bytes of numpy array
 '''
 
-
 '''
 NUMPY ARRAY SPEED DEMO
 

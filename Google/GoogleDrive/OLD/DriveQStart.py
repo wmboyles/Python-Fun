@@ -14,7 +14,7 @@ fid1 = '%s'%((file_list[0])['id'])
 print(fid1+'\n') #Folder ID
 
 '''
-#Creates a folder (Currently called TESTING2) inside the previouslylocated folder
+#Creates a folder (Currently called TESTING2) inside the previously located folder
 folder_metadata = {
     'title': 'TESTING2',
     'mimeType': 'application/vnd.google-apps.folder',
@@ -34,5 +34,5 @@ file_metadata = {
     'parents': [{'kind':'drive#fileLink', 'id':fid1}]
     }
 file = drive.CreateFile(file_metadata)
-file.SetContentFile('C:\\Users\\willi\\Desktop\\CI_Folder')
+file.SetContentFile('PATH')
 file.Upload()

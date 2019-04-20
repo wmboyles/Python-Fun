@@ -3,6 +3,7 @@ from urllib.parse import urlencode
 try: import urllib.request as urllib2
 except ImportError: import urllib2
 
+
 class WolframCloud:
 
     def wolfram_cloud_call(self, **args):
@@ -11,5 +12,5 @@ class WolframCloud:
         return result.read()
 
     def call(self, s):
-        textresult =  self.wolfram_cloud_call(s=s)
+        textresult = self.wolfram_cloud_call(s=s)
         return textresult

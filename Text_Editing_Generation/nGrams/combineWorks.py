@@ -1,6 +1,7 @@
 import shutil
 import os
 
+
 def combine(outName):
     with open(outName, 'wb') as outfile:
         for filename in os.listdir():
@@ -9,6 +10,7 @@ def combine(outName):
             else:
                 with open(filename, 'rb') as readfile:
                     shutil.copyfileobj(readfile, outfile)
+
 
 if __name__ == '__main__':
     combine(input("Output Name: "))

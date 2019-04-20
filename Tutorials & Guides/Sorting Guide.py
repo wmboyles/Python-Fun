@@ -2,10 +2,11 @@ from random import randint, shuffle
 from math import log10, floor
 from time import time
 
-def MakeList(elements,Min=0,Max=99):     #Makes an unsorted list [0,99] of given size
+
+def MakeList(elements, Min=0, Max=99):  # Makes an unsorted list [0,99] of given size
     out = []
     for i in range(elements):
-        out.append(randint(Min,Max))
+        out.append(randint(Min, Max))
 
     return out
 
@@ -20,14 +21,16 @@ correct position. Worst case, this will take (n-1)**2 swaps for a list of size n
 We disreguard everything except the highest degree and say that Bubble sort runs
 in O(n**2) time, or has O(n**2) complexity.
 '''
-def BubbleSort(list):     #Works in O((n-1)^2) time
+
+
+def BubbleSort(list):  # Works in O((n-1)^2) time
     changed = True
     while changed:
         changed = False
-        for i in range(len(list)-1):
-            if list[i]>list[i+1]:
-                list[i], list[i+1] = list[i+1], list[i]
-                changed=True
+        for i in range(len(list) - 1):
+            if list[i] > list[i + 1]:
+                list[i], list[i + 1] = list[i + 1], list[i]
+                changed = True
 
     return list
 
@@ -62,14 +65,15 @@ For example, Insertion Sort will do about 93,000 swaps to sort a 10,000
 element list while Bubble Sort will do 100,000,000
 '''
 
+
 def InsertionSort(l):
-    for i in range(1,len(l)):
-        j=i-1
+    for i in range(1, len(l)):
+        j = i - 1
         comparitor = l[i]
-        while(l[j]>comparitor) and j>=0:
-            l[j+1]=l[j]     
-            j-=1
-        l[j+1]=comparitor
+        while(l[j] > comparitor) and j >= 0:
+            l[j + 1] = l[j]     
+            j -= 1
+        l[j + 1] = comparitor
     return l    
 
 '''
@@ -78,15 +82,16 @@ The built-in function uses somthing called Timsort, which runs in
 O(n*ln(n)) complexity and O(n) space complexity -- pretty good
 '''
 
-#Helper function for Radix
-def SortByDigit(arr,digit):
+
+# Helper function for Radix
+def SortByDigit(arr, digit):
     out = []
-    digit = int(log10(digit)+1)
-    digit = len(str(arr[0]))-digit
-    a=0
-    for i1 in range(0,11):
-        for i2 in range(0,len(arr)):
-            if str(arr[i2])[digit]==str(i1):
+    digit = int(log10(digit) + 1)
+    digit = len(str(arr[0])) - digit
+    a = 0
+    for i1 in range(0, 11):
+        for i2 in range(0, len(arr)):
+            if str(arr[i2])[digit] == str(i1):
                 out.append(arr[i2])
     return out
 
@@ -97,14 +102,16 @@ complexity. It still does't really beat the built-in sort()function, even
 if sort() has a higher time complexity. Radix sort works fastest with numbers
 that are of of limited size, such as only three digits.
 '''
-#Precondition: All elements have the same number of digits
+
+
+# Precondition: All elements have the same number of digits
 def Radix(arr):
-    max1 = floor(log10(arr[0])+1)
-    exp=1
+    max1 = floor(log10(arr[0]) + 1)
+    exp = 1
     
-    while max1/exp > 0:
-        arrold=arr
-        try: arr = SortByDigit(arr,exp)
+    while max1 / exp > 0:
+        arrold = arr
+        try: arr = SortByDigit(arr, exp)
         except IndexError: return arrold
         
         exp *= 10
@@ -113,12 +120,12 @@ def Radix(arr):
 
 
 for i in range(10):
-    l=MakeList(10000,1000,9999)
+    l = MakeList(10000, 1000, 9999)
 
-    t1=time()
+    t1 = time()
     Radix(l)
-    time1 = time()-t1
+    time1 = time() - t1
     
-    t1=time()
+    t1 = time()
     InsertionSort(l)
-    print(time1-(time()-t1))
+    print(time1 - (time() - t1))

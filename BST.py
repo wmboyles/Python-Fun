@@ -1,4 +1,5 @@
 class binaryTree:
+
     def __init__(self):
         self.__root = None
         self.__size = 0
@@ -13,7 +14,7 @@ class binaryTree:
         if stem is None: stem = self.Node(value)
         elif stem.data > value: stem.left = self.__add(stem.left, value)
         elif stem.data < value: stem.right = self.__add(stem.right, value)
-        else: raise Exception #duplicate
+        else: raise Exception  # duplicate
 
         return stem
 
@@ -52,21 +53,20 @@ class binaryTree:
         elif stem.data == value: return True
         elif stem.data < value: return self.__contains2(stem.right, value)
         elif stem.data > value: return self.__contains2(stem.left, value)
-        else: raise Exception #You shouldn't be able to get here
+        else: raise Exception  # You shouldn't be able to get here
 
-    def toString(self): return self.__toString(self.__root)[2:-2] #In-order
+    def toString(self): return self.__toString(self.__root)[2:-2]  # In-order
 
     def __toString(self, stem):
         if stem is None: return ", "
         else: return self.__toString(stem.left) + str(stem.data) + self.__toString2(stem.right)
 
     class Node:
-        def __init__(self, data, left = None, right = None):
+
+        def __init__(self, data, left=None, right=None):
             self.data = data
             self.left = left
             self.right = right
 
 
-
 bt = binaryTree()
-        

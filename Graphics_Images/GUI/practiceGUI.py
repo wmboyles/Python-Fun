@@ -1,6 +1,8 @@
 from tkinter import *
 
+
 class Application(Frame):
+
     def __init__(self, master):
         Frame.__init__(self, master)
         self.grid()
@@ -15,7 +17,8 @@ class Application(Frame):
 
     def update_count(self):
         self.count += 1
-        self.button["text"] = "Total Clicks: "+str(self.count)
+        self.button["text"] = "Total Clicks: " + str(self.count)
+
 
 root = Tk()
 root.title("Counter")

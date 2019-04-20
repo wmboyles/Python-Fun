@@ -74,7 +74,7 @@
 	file.SetContentFile('SOME LOCAL PATH TO A FILE YOU WANT TO UPLOAD')
 	file.Upload()
 	]
-	a) You'll have to use '\\' to specifiy a backslash (UniCode Escape)
+	a) You'll have to use '\\' to specify a backslash (UniCode Escape)
 9) When this is ran, it will upload the specified file to the specified folder
 
 

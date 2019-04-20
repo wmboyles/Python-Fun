@@ -80,6 +80,6 @@ def uploadDoc(parentID,localPath,driveName):
 
 
 def main():
-    uploadFolder('11phk3MqMs1-Ysoc-xpPsqIc-vunzanRo','CI_Folder','CIFolder')
+    uploadFolder('','','')
 
 main()

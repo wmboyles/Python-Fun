@@ -8,7 +8,7 @@ click cells such that all of the lights on the board are turned to the off state
 
 ## Mathematics
 ### All Ones Problem
-A simplier objective to the problem set before the player in Lights Out is the All Ones Problem.
+A simpler objective to the problem set before the player in Lights Out is the All Ones Problem.
 Here is how the problem is usually phrased (from [this](https://drive.google.com/file/d/1fjlUMWDdL4Une6CjCAvtjzAqaGQ1EMJr/view?usp=sharing) paper):
 
 A janitor is walking through a museum in the morning, switching on the light in every room. In every room 

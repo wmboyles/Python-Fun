@@ -1,7 +1,7 @@
 import math
 import random
 
-#All of these produce floats with 4 digits of precision
+# All of these produce floats with 4 digits of precision
 
 ''' The Middle Square algorithm is credited to John Von Neuyman. It produces
     pseudo-random numbers. All pseudo-random numbers eventually repeat in in the
@@ -9,12 +9,14 @@ import random
     All sequences generated with this algorithm will always cycle back with a
     period less than 4096 if the range is [0,9999]
 '''
-def MiddleSquare(seed, amount):     #Von Neuyman's Middle Square Algorithm (ish)
-    for i in range(0,amount):
-        length = int(math.log10(seed))+1
-        seed = seed**2
-        lengthSquare = int(math.log10(seed))+1
-        seed = (seed-1000000*math.floor(seed/1000000)-(seed%100))/100 #gets middle 4 digits
+
+
+def MiddleSquare(seed, amount):  # Von Neuyman's Middle Square Algorithm (ish)
+    for i in range(0, amount):
+        length = int(math.log10(seed)) + 1
+        seed = seed ** 2
+        lengthSquare = int(math.log10(seed)) + 1
+        seed = (seed - 1000000 * math.floor(seed / 1000000) - (seed % 100)) / 100  # gets middle 4 digits
         print(int(seed))
 
 ''' The Linear Coungrential generator produces pusedo-random numbers using four inputs.
@@ -30,10 +32,11 @@ def MiddleSquare(seed, amount):     #Von Neuyman's Middle Square Algorithm (ish)
     LCG sequences tend to have larger periods than Middle Square sequences.
 '''
 
-def LinCongGen(m, a, c, seed, amount): #Linear Congruential Generator
-    number=0
-    for i in range(0,amount):
-        seed = (seed*a+c)%m
+
+def LinCongGen(m, a, c, seed, amount):  # Linear Congruential Generator
+    number = 0
+    for i in range(0, amount):
+        seed = (seed * a + c) % m
         print(seed)
 
 
@@ -41,12 +44,12 @@ seed = int(input("Seed: "))
 print("==============================================")
 random.seed(seed)
 print("Python Random")
-print(random.randint(0,9999))
+print(random.randint(0, 9999))
 print("==============================================")
 print("Middle Square")
-MiddleSquare(seed,1)
+MiddleSquare(seed, 1)
 print("==============================================")
 print("Linear Congruential Generator")
-LinCongGen(10000,378,2310,seed,1)
+LinCongGen(10000, 378, 2310, seed, 1)
 print("==============================================")
 input("ENTER to EXIT")
