@@ -1,385 +1,1927 @@
-[{"code":"201","state":"New Jersey","overlapping":"551"},
-{"code":"202","state":"District of Columbia","overlapping":"None"},
-{"code":"203","state":"Connecticut","overlapping":"475"},
-{"code":"204","state":"Manitoba","overlapping":"431"},
-{"code":"205","state":"Alabama","overlapping":"None"},
-{"code":"206","state":"Washington","overlapping":"None"},
-{"code":"207","state":"Maine","overlapping":"None"},
-{"code":"208","state":"Idaho","overlapping":"None"},
-{"code":"209","state":"California","overlapping":"None"},
-{"code":"210","state":"Texas","overlapping":"None"},
-{"code":"212","state":"New York","overlapping":"646, 917"},
-{"code":"213","state":"California","overlapping":"323"},
-{"code":"214","state":"Texas","overlapping":"469, 972"},
-{"code":"215","state":"Pennsylvania","overlapping":"267"},
-{"code":"216","state":"Ohio","overlapping":"None"},
-{"code":"217","state":"Illinois","overlapping":"None"},
-{"code":"218","state":"Minnesota","overlapping":"None"},
-{"code":"219","state":"Indiana","overlapping":"None"},
-{"code":"220","state":"Ohio","overlapping":"740"},
-{"code":"223","state":"Pennsylvania","overlapping":"717"},
-{"code":"224","state":"Illinois","overlapping":"847"},
-{"code":"225","state":"Louisiana","overlapping":"None"},
-{"code":"226","state":"Ontario","overlapping":"519"},
-{"code":"228","state":"Mississippi","overlapping":"None"},
-{"code":"229","state":"Georgia","overlapping":"None"},
-{"code":"231","state":"Michigan","overlapping":"None"},
-{"code":"234","state":"Ohio","overlapping":"330"},
-{"code":"236","state":"British Columbia","overlapping":"250, 778"},
-{"code":"239","state":"Florida","overlapping":"TODO"},
-{"code":"240","state":"Maryland","overlapping":"301"},
-{"code":"242","state":"Bahamas","overlapping":"None"},
-{"code":"246","state":"Barbados","overlapping":"None"},
-{"code":"248","state":"Michigan","overlapping":"947"},
-{"code":"250","state":"British Columbia","overlapping":"236, 778"},
-{"code":"251","state":"Alabama","overlapping":"None"},
-{"code":"252","state":"North Carolina","overlapping":"None"},
-{"code":"253","state":"Washington","overlapping":"None"},
-{"code":"254","state":"Texas","overlapping":"None"},
-{"code":"256","state":"Alabama","overlapping":"938"},
-{"code":"260","state":"Indiana","overlapping":"None"},
-{"code":"262","state":"Wisconsin","overlapping":"None"},
-{"code":"264","state":"Anguilla","overlapping":"None"},
-{"code":"267","state":"Pennsylvania","overlapping":"215"},
-{"code":"268","state":"Antigua & Barbuda","overlapping":"None"},
-{"code":"269","state":"Michigan","overlapping":"None"},
-{"code":"270","state":"Kentucky","overlapping":"364"},
-{"code":"272","state":"Pennsylvania","overlapping":"570"},
-{"code":"276","state":"Virginia","overlapping":"None"},
-{"code":"281","state":"Texas","overlapping":"346, 713, 832"},
-{"code":"284","state":"British Virgin Islands","overlapping":"None"},
-{"code":"289","state":"Ontario","overlapping":"365, 905"},
-{"code":"301","state":"Maryland","overlapping":"240"},
-{"code":"302","state":"Delaware","overlapping":"None"},
-{"code":"303","state":"Colorado","overlapping":"720"},
-{"code":"304","state":"West Virginia","overlapping":"681"},
-{"code":"305","state":"Florida","overlapping":"786"},
-{"code":"306","state":"Saskatchewan","overlapping":"639"},
-{"code":"307","state":"Wyoming","overlapping":"None"},
-{"code":"308","state":"Nebraska","overlapping":"None"},
-{"code":"309","state":"Illinois","overlapping":"None"},
-{"code":"310","state":"California","overlapping":"424"},
-{"code":"312","state":"Illinois","overlapping":"872"},
-{"code":"313","state":"Michigan","overlapping":"None"},
-{"code":"314","state":"Missouri","overlapping":"None"},
-{"code":"315","state":"New York","overlapping":"680"},
-{"code":"316","state":"Kansas","overlapping":"None"},
-{"code":"317","state":"Indiana","overlapping":"463"},
-{"code":"318","state":"Louisiana","overlapping":"None"},
-{"code":"319","state":"Iowa","overlapping":"None"},
-{"code":"320","state":"Minnesota","overlapping":"None"},
-{"code":"321","state":"Florida","overlapping":"None"},
-{"code":"323","state":"California","overlapping":"213"},
-{"code":"325","state":"Texas","overlapping":"None"},
-{"code":"330","state":"Ohio","overlapping":"234"},
-{"code":"331","state":"Illinois","overlapping":"630"},
-{"code":"334","state":"Alabama","overlapping":"None"},
-{"code":"336","state":"North Carolina","overlapping":"743"},
-{"code":"337","state":"Louisiana","overlapping":"None"},
-{"code":"339","state":"Massachusetts","overlapping":"781"},
-{"code":"340","state":"US Virgin Islands","overlapping":"None"},
-{"code":"343","state":"Ontario","overlapping":"613"},
-{"code":"345","state":"Cayman Islands","overlapping":"None"},
-{"code":"346","state":"Texas","overlapping":"281, 713, 832"},
-{"code":"347","state":"New York","overlapping":"718, 917, 929"},
-{"code":"351","state":"Massachusetts","overlapping":"978"},
-{"code":"352","state":"Florida","overlapping":"None"},
-{"code":"360","state":"Washington","overlapping":"564"},
-{"code":"361","state":"Texas","overlapping":"None"},
-{"code":"364","state":"Kentucky","overlapping":"270"},
-{"code":"365","state":"Ontario","overlapping":"289, 905"},
-{"code":"380","state":"Ohio","overlapping":"614"},
-{"code":"385","state":"Utah","overlapping":"801"},
-{"code":"386","state":"Florida","overlapping":"None"},
-{"code":"401","state":"Rhode Island","overlapping":"None"},
-{"code":"402","state":"Nebraska","overlapping":"531"},
-{"code":"403","state":"Alberta","overlapping":"587, 825"},
-{"code":"404","state":"Georgia","overlapping":"470, 678"},
-{"code":"405","state":"Oklahoma","overlapping":"None"},
-{"code":"406","state":"Montana","overlapping":"None"},
-{"code":"407","state":"Florida","overlapping":"321"},
-{"code":"408","state":"California","overlapping":"669"},
-{"code":"409","state":"Texas","overlapping":"None"},
-{"code":"410","state":"Maryland","overlapping":"443, 667"},
-{"code":"412","state":"Pennsylvania","overlapping":"878"},
-{"code":"413","state":"Massachusetts","overlapping":"None"},
-{"code":"414","state":"Wisconsin","overlapping":"None"},
-{"code":"415","state":"California","overlapping":"628"},
-{"code":"416","state":"Ontario","overlapping":"437, 647"},
-{"code":"417","state":"Missouri","overlapping":"None"},
-{"code":"418","state":"Quebec","overlapping":"581"},
-{"code":"419","state":"Ohio","overlapping":"567"},
-{"code":"423","state":"Tennessee","overlapping":"None"},
-{"code":"425","state":"Washington","overlapping":"None"},
-{"code":"430","state":"Texas","overlapping":"903"},
-{"code":"432","state":"Texas","overlapping":"None"},
-{"code":"434","state":"Virginia","overlapping":"None"},
-{"code":"435","state":"Utah","overlapping":"None"},
-{"code":"437","state":"Ontario","overlapping":"416, 647"},
-{"code":"438","state":"Quebec","overlapping":"514"},
-{"code":"440","state":"Ohio","overlapping":"None"},
-{"code":"441","state":"Bermuda","overlapping":"None"},
-{"code":"443","state":"Maryland","overlapping":"410 667"},
-{"code":"450","state":"Quebec","overlapping":"579"},
-{"code":"456","state":"Carrier Services: Inbound International","overlapping":"None"},
-{"code":"458","state":"Oregon","overlapping":"514"},
-{"code":"463","state":"Indiana","overlapping":"317"},
-{"code":"469","state":"Texas","overlapping":"214, 972"},
-{"code":"470","state":"Georgia","overlapping":"404, 678, 770"},
-{"code":"473","state":"Grenada","overlapping":"None"},
-{"code":"475","state":"Connecticut","overlapping":"203"},
-{"code":"478","state":"Georgia","overlapping":"None"},
-{"code":"479","state":"Arkansas","overlapping":"None"},
-{"code":"480","state":"Arizona","overlapping":"None"},
-{"code":"484","state":"Pennsylvania","overlapping":"610"},
-{"code":"500","state":"Personal Communications Services","overlapping":"None"},
-{"code":"501","state":"Arkansas","overlapping":"None"},
-{"code":"502","state":"Kentucky","overlapping":"None"},
-{"code":"503","state":"Oregon","overlapping":"971"},
-{"code":"504","state":"Louisiana","overlapping":"None"},
-{"code":"505","state":"New Mexico","overlapping":"None"},
-{"code":"506","state":"New Brunswick","overlapping":"None"},
-{"code":"507","state":"Minnesota","overlapping":"None"},
-{"code":"508","state":"Massachusetts","overlapping":"774"},
-{"code":"509","state":"Washington","overlapping":"None"},
-{"code":"510","state":"California","overlapping":"None"},
-{"code":"511","state":"Nationwide Travel Information","overlapping":"None"},
-{"code":"512","state":"Texas","overlapping":"None"},
-{"code":"513","state":"Ohio","overlapping":"None"},
-{"code":"514","state":"Quebec","overlapping":"438"},
-{"code":"515","state":"Iowa","overlapping":"None"},
-{"code":"516","state":"New York","overlapping":"None"},
-{"code":"517","state":"Michigan","overlapping":"None"},
-{"code":"518","state":"New York","overlapping":"838"},
-{"code":"519","state":"Ontario","overlapping":"226"},
-{"code":"520","state":"Arizona","overlapping":"None"},
-{"code":"530","state":"California","overlapping":"None"},
-{"code":"531","state":"Nebraska","overlapping":"402"},
-{"code":"533","state":"Personal Communications Services","overlapping":"None"},
-{"code":"534","state":"Wisconsin","overlapping":"715"},
-{"code":"539","state":"Oklahoma","overlapping":"918"},
-{"code":"540","state":"Virginia","overlapping":"TODO"},
-{"code":"541","state":"Oregon","overlapping":"458"},
-{"code":"544","state":"Personal Communications Services","overlapping":"None"},
-{"code":"551","state":"New Jersey","overlapping":"201"},
-{"code":"559","state":"California","overlapping":"None"},
-{"code":"561","state":"Florida","overlapping":"None"},
-{"code":"562","state":"California","overlapping":"None"},
-{"code":"563","state":"Iowa","overlapping":"None"},
-{"code":"564","state":"Washington","overlapping":"360"},
-{"code":"566","state":"Personal Communications Services","overlapping":"None"},
-{"code":"567","state":"Ohio","overlapping":"419"},
-{"code":"570","state":"Pennsylvania","overlapping":"None"},
-{"code":"571","state":"Virginia","overlapping":"703"},
-{"code":"573","state":"Missouri","overlapping":"None"},
-{"code":"574","state":"Indiana","overlapping":"None"},
-{"code":"575","state":"New Mexico","overlapping":"None"},
-{"code":"577","state":"Personal Communications Services","overlapping":"None"},
-{"code":"579","state":"Quebec","overlapping":"450"},
-{"code":"580","state":"Oklahoma","overlapping":"None"},
-{"code":"585","state":"New York","overlapping":"None"},
-{"code":"586","state":"Michigan","overlapping":"None"},
-{"code":"587","state":"Alberta","overlapping":"403, 780, 825"},
-{"code":"600","state":"Canada Non-Geographic","overlapping":"None"},
-{"code":"601","state":"Mississippi","overlapping":"769"},
-{"code":"602","state":"Arizona","overlapping":"None"},
-{"code":"603","state":"New Hampshire","overlapping":"None"},
-{"code":"604","state":"British Columbia","overlapping":"236, 778"},
-{"code":"605","state":"South Dakota","overlapping":"None"},
-{"code":"606","state":"Kentucky","overlapping":"None"},
-{"code":"607","state":"New York","overlapping":"None"},
-{"code":"608","state":"Wisconsin","overlapping":"None"},
-{"code":"609","state":"New Jersey","overlapping":"None"},
-{"code":"610","state":"Pennsylvania","overlapping":"484"},
-{"code":"612","state":"Minnesota","overlapping":"None"},
-{"code":"613","state":"Ontario","overlapping":"343"},
-{"code":"614","state":"Ohio","overlapping":"380"},
-{"code":"615","state":"Tennessee","overlapping":"629"},
-{"code":"616","state":"Michigan","overlapping":"None"},
-{"code":"617","state":"Massachusetts","overlapping":"857"},
-{"code":"618","state":"Illinois","overlapping":"None"},
-{"code":"619","state":"California","overlapping":"None"},
-{"code":"620","state":"Kansas","overlapping":"None"},
-{"code":"623","state":"Arizona","overlapping":"None"},
-{"code":"626","state":"California","overlapping":"None"},
-{"code":"628","state":"California","overlapping":"415"},
-{"code":"629","state":"Tennessee","overlapping":"615"},
-{"code":"630","state":"Illinois","overlapping":"331"},
-{"code":"631","state":"New York","overlapping":"934"},
-{"code":"636","state":"Missouri","overlapping":"None"},
-{"code":"639","state":"Saskatchewan","overlapping":"306"},
-{"code":"641","state":"Iowa","overlapping":"None"},
-{"code":"646","state":"New York","overlapping":"212, 917"},
-{"code":"647","state":"Ontario","overlapping":"416, 437"},
-{"code":"649","state":"Turks & Caicos Islands","overlapping":"None"},
-{"code":"650","state":"California","overlapping":"None"},
-{"code":"651","state":"Minnesota","overlapping":"None"},
-{"code":"657","state":"California","overlapping":"714"},
-{"code":"660","state":"Missouri","overlapping":"None"},
-{"code":"661","state":"California","overlapping":"None"},
-{"code":"662","state":"Mississippi","overlapping":"None"},
-{"code":"664","state":"Montserrat","overlapping":"None"},
-{"code":"667","state":"Maryland","overlapping":"410, 443"},
-{"code":"669","state":"California","overlapping":"408"},
-{"code":"670","state":"Northern Mariana Islands","overlapping":"None"},
-{"code":"671","state":"Guam","overlapping":"None"},
-{"code":"678","state":"Georgia","overlapping":"404, 470, 770"},
-{"code":"680","state":"New York","overlapping":"315"},
-{"code":"681","state":"West Virginia","overlapping":"304"},
-{"code":"682","state":"Texas","overlapping":"817"},
-{"code":"684","state":"American Samoa","overlapping":"None"},
-{"code":"700","state":"Interexchange Carrier Services","overlapping":"None"},
-{"code":"701","state":"North Dakota","overlapping":"None"},
-{"code":"702","state":"Nevada","overlapping":"725"},
-{"code":"703","state":"Virginia","overlapping":"571"},
-{"code":"704","state":"North Carolina","overlapping":"980"},
-{"code":"705","state":"Ontario","overlapping":"249"},
-{"code":"706","state":"Georgia","overlapping":"762"},
-{"code":"707","state":"California","overlapping":"None"},
-{"code":"708","state":"Illinois","overlapping":"None"},
-{"code":"709","state":"Newfoundland","overlapping":"None"},
-{"code":"710","state":"US","overlapping":"None"},
-{"code":"712","state":"Iowa","overlapping":"None"},
-{"code":"713","state":"Texas","overlapping":"281, 346, 832"},
-{"code":"714","state":"California","overlapping":"657"},
-{"code":"715","state":"Wisconsin","overlapping":"534"},
-{"code":"716","state":"New York","overlapping":"None"},
-{"code":"717","state":"Pennsylvania","overlapping":"223"},
-{"code":"718","state":"New York","overlapping":"347, 917, 929"},
-{"code":"719","state":"Colorado","overlapping":"None"},
-{"code":"720","state":"Colorado","overlapping":"303"},
-{"code":"724","state":"Pennsylvania","overlapping":"878"},
-{"code":"725","state":"Nevada","overlapping":"702"},
-{"code":"727","state":"Florida","overlapping":"None"},
-{"code":"731","state":"Tennessee","overlapping":"None"},
-{"code":"732","state":"New Jersey","overlapping":"848"},
-{"code":"734","state":"Michigan","overlapping":"None"},
-{"code":"740","state":"Ohio","overlapping":"220"},
-{"code":"743","state":"North Carolina","overlapping":"336"},
-{"code":"747","state":"California","overlapping":"818"},
-{"code":"754","state":"Florida","overlapping":"954"},
-{"code":"757","state":"Virginia","overlapping":"None"},
-{"code":"758","state":"St. Lucia","overlapping":"None"},
-{"code":"760","state":"California","overlapping":"442"},
-{"code":"762","state":"Georgia","overlapping":"706"},
-{"code":"763","state":"Minnesota","overlapping":"None"},
-{"code":"765","state":"Indiana","overlapping":"None"},
-{"code":"767","state":"Dominica","overlapping":"None"},
-{"code":"769","state":"Mississippi","overlapping":"601"},
-{"code":"770","state":"Georgia","overlapping":"470, 678"},
-{"code":"772","state":"Florida","overlapping":"None"},
-{"code":"773","state":"Illinois","overlapping":"872"},
-{"code":"774","state":"Massachusetts","overlapping":"608"},
-{"code":"775","state":"Nevada","overlapping":"None"},
-{"code":"778","state":"British Columbia","overlapping":"236, 250, 604"},
-{"code":"779","state":"Illinois","overlapping":"815"},
-{"code":"780","state":"Alberta","overlapping":"587, 825"},
-{"code":"781","state":"Massachusetts","overlapping":"339"},
-{"code":"782","state":"Nova Scotia, Prince Edward Island","overlapping":"902"},
-{"code":"784","state":"St. Vincent & the Grenadines","overlapping":"None"},
-{"code":"785","state":"Kansas","overlapping":"None"},
-{"code":"786","state":"Florida","overlapping":"305"},
-{"code":"787","state":"Puerto Rico","overlapping":"939"},
-{"code":"800","state":"Toll Free","overlapping":"None"},
-{"code":"801","state":"Utah","overlapping":"385"},
-{"code":"802","state":"Vermont","overlapping":"None"},
-{"code":"803","state":"South Carolina","overlapping":"None"},
-{"code":"804","state":"Virginia","overlapping":"None"},
-{"code":"805","state":"California","overlapping":"None"},
-{"code":"806","state":"Texas","overlapping":"None"},
-{"code":"807","state":"Ontario","overlapping":"None"},
-{"code":"808","state":"Hawaii","overlapping":"None"},
-{"code":"809","state":"Dominican Republic","overlapping":"829, 849"},
-{"code":"810","state":"Michigan","overlapping":"None"},
-{"code":"812","state":"Indiana","overlapping":"930"},
-{"code":"813","state":"Florida","overlapping":"None"},
-{"code":"814","state":"Pennsylvania","overlapping":"None"},
-{"code":"815","state":"Illinois","overlapping":"779"},
-{"code":"816","state":"Missouri","overlapping":"None"},
-{"code":"817","state":"Texas","overlapping":"682"},
-{"code":"818","state":"California","overlapping":"747"},
-{"code":"819","state":"Quebec","overlapping":"873"},
-{"code":"825","state":"Alberta","overlapping":"403, 587, 780"},
-{"code":"828","state":"North Carolina","overlapping":"None"},
-{"code":"830","state":"Texas","overlapping":"None"},
-{"code":"831","state":"California","overlapping":"None"},
-{"code":"832","state":"Texas","overlapping":"281, 346, 713"},
-{"code":"838","state":"New York","overlapping":"518"},
-{"code":"843","state":"South Carolina","overlapping":"854"},
-{"code":"844","state":"Toll Free","overlapping":"None"},
-{"code":"845","state":"New York","overlapping":"None"},
-{"code":"847","state":"Illinois","overlapping":"224"},
-{"code":"848","state":"New Jersey","overlapping":"732"},
-{"code":"850","state":"Florida","overlapping":"None"},
-{"code":"854","state":"South Carolina","overlapping":"843"},
-{"code":"855","state":"Toll Free","overlapping":"None"},
-{"code":"856","state":"New Jersey","overlapping":"None"},
-{"code":"857","state":"Massachusetts","overlapping":"617"},
-{"code":"858","state":"California","overlapping":"None"},
-{"code":"859","state":"Kentucky","overlapping":"None"},
-{"code":"860","state":"Connecticut","overlapping":"959"},
-{"code":"862","state":"New Jersey","overlapping":"973"},
-{"code":"863","state":"Florida","overlapping":"None"},
-{"code":"864","state":"South Carolina","overlapping":"None"},
-{"code":"865","state":"Tennessee","overlapping":"None"},
-{"code":"866","state":"Toll Free","overlapping":"None"},
-{"code":"867","state":"Northwest Territories, Nunavut, Yukon","overlapping":"None"},
-{"code":"868","state":"Trinidad &amp; Tobago","overlapping":"None"},
-{"code":"869","state":"St. Kitts & Nevis","overlapping":"None"},
-{"code":"870","state":"Arkansas","overlapping":"None"},
-{"code":"872","state":"Illinois","overlapping":"312, 773"},
-{"code":"873","state":"Quebec","overlapping":"819"},
-{"code":"876","state":"Jamaica","overlapping":"None"},
-{"code":"878","state":"Pennsylvania","overlapping":"412, 724"},
-{"code":"880","state":"Toll Free","overlapping":"None"},
-{"code":"881","state":"Toll Free","overlapping":"None"},
-{"code":"882","state":"Toll Free","overlapping":"None"},
-{"code":"888","state":"Toll Free","overlapping":"None"},
-{"code":"900","state":"Pay Per Call","overlapping":"None"},
-{"code":"901","state":"Tennessee","overlapping":"None"},
-{"code":"902","state":"Nova Scotia, Price Edward Island","overlapping":"782"},
-{"code":"903","state":"Texas","overlapping":"403"},
-{"code":"904","state":"Florida","overlapping":"None"},
-{"code":"905","state":"Ontario","overlapping":"289, 365"},
-{"code":"906","state":"Michigan","overlapping":"None"},
-{"code":"907","state":"Alaska","overlapping":"None"},
-{"code":"908","state":"New Jersey","overlapping":"New Jersey"},
-{"code":"909","state":"California","overlapping":"California"},
-{"code":"910","state":"North Carolina","overlapping":"None"},
-{"code":"912","state":"Georgia","overlapping":"None"},
-{"code":"913","state":"Kansas","overlapping":"None"},
-{"code":"914","state":"New York","overlapping":"None"},
-{"code":"915","state":"Texas","overlapping":"None"},
-{"code":"916","state":"California","overlapping":"None"},
-{"code":"917","state":"New York","overlapping":"212, 347, 646, 718, 929"},
-{"code":"918","state":"Oklahoma","overlapping":"539"},
-{"code":"919","state":"North Carolina","overlapping":"984"},
-{"code":"920","state":"Wisconsin","overlapping":"None"},
-{"code":"925","state":"California","overlapping":"None"},
-{"code":"927","state":"Florida","overlapping":"None"},
-{"code":"928","state":"Arizona","overlapping":"None"},
-{"code":"929","state":"New York","overlapping":"347, 718, 917"},
-{"code":"930","state":"Indiana","overlapping":"812"},
-{"code":"931","state":"Tennessee","overlapping":"631"},
-{"code":"934","state":"New York","overlapping":"None"},
-{"code":"936","state":"Texas","overlapping":"None"},
-{"code":"937","state":"Ohio","overlapping":"None"},
-{"code":"938","state":"Alabama","overlapping":"256"},
-{"code":"939","state":"Puerto Rico","overlapping":"787"},
-{"code":"940","state":"Texas","overlapping":"None"},
-{"code":"941","state":"Florida","overlapping":"None"},
-{"code":"947","state":"Michigan","overlapping":"248"},
-{"code":"949","state":"California","overlapping":"None"},
-{"code":"952","state":"Minnesota","overlapping":"None"},
-{"code":"954","state":"Florida","overlapping":"754"},
-{"code":"956","state":"Texas","overlapping":"None"},
-{"code":"959","state":"Connecticut","overlapping":"860"},
-{"code":"970","state":"Colorado","overlapping":"None"},
-{"code":"971","state":"Oregon","overlapping":"503"},
-{"code":"972","state":"Texas","overlapping":"214, 469"},
-{"code":"973","state":"New Jersey","overlapping":"862"},
-{"code":"978","state":"Massachusetts","overlapping":"351"},
-{"code":"979","state":"Texas","overlapping":"None"},
-{"code":"980","state":"North Carolina","overlapping":"704"},
-{"code":"985","state":"Louisiana","overlapping":"None"},
-{"code":"989","state":"Michigan","overlapping":"None"}]
+[
+	{
+		"code": "201",
+		"state": "New Jersey",
+		"overlapping": "551"
+	},
+	{
+		"code": "202",
+		"state": "District of Columbia",
+		"overlapping": "None"
+	},
+	{
+		"code": "203",
+		"state": "Connecticut",
+		"overlapping": "475"
+	},
+	{
+		"code": "204",
+		"state": "Manitoba",
+		"overlapping": "431"
+	},
+	{
+		"code": "205",
+		"state": "Alabama",
+		"overlapping": "None"
+	},
+	{
+		"code": "206",
+		"state": "Washington",
+		"overlapping": "None"
+	},
+	{
+		"code": "207",
+		"state": "Maine",
+		"overlapping": "None"
+	},
+	{
+		"code": "208",
+		"state": "Idaho",
+		"overlapping": "None"
+	},
+	{
+		"code": "209",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "210",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "212",
+		"state": "New York",
+		"overlapping": "646, 917"
+	},
+	{
+		"code": "213",
+		"state": "California",
+		"overlapping": "323"
+	},
+	{
+		"code": "214",
+		"state": "Texas",
+		"overlapping": "469, 972"
+	},
+	{
+		"code": "215",
+		"state": "Pennsylvania",
+		"overlapping": "267"
+	},
+	{
+		"code": "216",
+		"state": "Ohio",
+		"overlapping": "None"
+	},
+	{
+		"code": "217",
+		"state": "Illinois",
+		"overlapping": "None"
+	},
+	{
+		"code": "218",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "219",
+		"state": "Indiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "220",
+		"state": "Ohio",
+		"overlapping": "740"
+	},
+	{
+		"code": "223",
+		"state": "Pennsylvania",
+		"overlapping": "717"
+	},
+	{
+		"code": "224",
+		"state": "Illinois",
+		"overlapping": "847"
+	},
+	{
+		"code": "225",
+		"state": "Louisiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "226",
+		"state": "Ontario",
+		"overlapping": "519"
+	},
+	{
+		"code": "228",
+		"state": "Mississippi",
+		"overlapping": "None"
+	},
+	{
+		"code": "229",
+		"state": "Georgia",
+		"overlapping": "None"
+	},
+	{
+		"code": "231",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "234",
+		"state": "Ohio",
+		"overlapping": "330"
+	},
+	{
+		"code": "236",
+		"state": "British Columbia",
+		"overlapping": "250, 778"
+	},
+	{
+		"code": "239",
+		"state": "Florida",
+		"overlapping": "TODO"
+	},
+	{
+		"code": "240",
+		"state": "Maryland",
+		"overlapping": "301"
+	},
+	{
+		"code": "242",
+		"state": "Bahamas",
+		"overlapping": "None"
+	},
+	{
+		"code": "246",
+		"state": "Barbados",
+		"overlapping": "None"
+	},
+	{
+		"code": "248",
+		"state": "Michigan",
+		"overlapping": "947"
+	},
+	{
+		"code": "250",
+		"state": "British Columbia",
+		"overlapping": "236, 778"
+	},
+	{
+		"code": "251",
+		"state": "Alabama",
+		"overlapping": "None"
+	},
+	{
+		"code": "252",
+		"state": "North Carolina",
+		"overlapping": "None"
+	},
+	{
+		"code": "253",
+		"state": "Washington",
+		"overlapping": "None"
+	},
+	{
+		"code": "254",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "256",
+		"state": "Alabama",
+		"overlapping": "938"
+	},
+	{
+		"code": "260",
+		"state": "Indiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "262",
+		"state": "Wisconsin",
+		"overlapping": "None"
+	},
+	{
+		"code": "264",
+		"state": "Anguilla",
+		"overlapping": "None"
+	},
+	{
+		"code": "267",
+		"state": "Pennsylvania",
+		"overlapping": "215"
+	},
+	{
+		"code": "268",
+		"state": "Antigua & Barbuda",
+		"overlapping": "None"
+	},
+	{
+		"code": "269",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "270",
+		"state": "Kentucky",
+		"overlapping": "364"
+	},
+	{
+		"code": "272",
+		"state": "Pennsylvania",
+		"overlapping": "570"
+	},
+	{
+		"code": "276",
+		"state": "Virginia",
+		"overlapping": "None"
+	},
+	{
+		"code": "281",
+		"state": "Texas",
+		"overlapping": "346, 713, 832"
+	},
+	{
+		"code": "284",
+		"state": "British Virgin Islands",
+		"overlapping": "None"
+	},
+	{
+		"code": "289",
+		"state": "Ontario",
+		"overlapping": "365, 905"
+	},
+	{
+		"code": "301",
+		"state": "Maryland",
+		"overlapping": "240"
+	},
+	{
+		"code": "302",
+		"state": "Delaware",
+		"overlapping": "None"
+	},
+	{
+		"code": "303",
+		"state": "Colorado",
+		"overlapping": "720"
+	},
+	{
+		"code": "304",
+		"state": "West Virginia",
+		"overlapping": "681"
+	},
+	{
+		"code": "305",
+		"state": "Florida",
+		"overlapping": "786"
+	},
+	{
+		"code": "306",
+		"state": "Saskatchewan",
+		"overlapping": "639"
+	},
+	{
+		"code": "307",
+		"state": "Wyoming",
+		"overlapping": "None"
+	},
+	{
+		"code": "308",
+		"state": "Nebraska",
+		"overlapping": "None"
+	},
+	{
+		"code": "309",
+		"state": "Illinois",
+		"overlapping": "None"
+	},
+	{
+		"code": "310",
+		"state": "California",
+		"overlapping": "424"
+	},
+	{
+		"code": "312",
+		"state": "Illinois",
+		"overlapping": "872"
+	},
+	{
+		"code": "313",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "314",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "315",
+		"state": "New York",
+		"overlapping": "680"
+	},
+	{
+		"code": "316",
+		"state": "Kansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "317",
+		"state": "Indiana",
+		"overlapping": "463"
+	},
+	{
+		"code": "318",
+		"state": "Louisiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "319",
+		"state": "Iowa",
+		"overlapping": "None"
+	},
+	{
+		"code": "320",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "321",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "323",
+		"state": "California",
+		"overlapping": "213"
+	},
+	{
+		"code": "325",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "330",
+		"state": "Ohio",
+		"overlapping": "234"
+	},
+	{
+		"code": "331",
+		"state": "Illinois",
+		"overlapping": "630"
+	},
+	{
+		"code": "334",
+		"state": "Alabama",
+		"overlapping": "None"
+	},
+	{
+		"code": "336",
+		"state": "North Carolina",
+		"overlapping": "743"
+	},
+	{
+		"code": "337",
+		"state": "Louisiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "339",
+		"state": "Massachusetts",
+		"overlapping": "781"
+	},
+	{
+		"code": "340",
+		"state": "US Virgin Islands",
+		"overlapping": "None"
+	},
+	{
+		"code": "343",
+		"state": "Ontario",
+		"overlapping": "613"
+	},
+	{
+		"code": "345",
+		"state": "Cayman Islands",
+		"overlapping": "None"
+	},
+	{
+		"code": "346",
+		"state": "Texas",
+		"overlapping": "281, 713, 832"
+	},
+	{
+		"code": "347",
+		"state": "New York",
+		"overlapping": "718, 917, 929"
+	},
+	{
+		"code": "351",
+		"state": "Massachusetts",
+		"overlapping": "978"
+	},
+	{
+		"code": "352",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "360",
+		"state": "Washington",
+		"overlapping": "564"
+	},
+	{
+		"code": "361",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "364",
+		"state": "Kentucky",
+		"overlapping": "270"
+	},
+	{
+		"code": "365",
+		"state": "Ontario",
+		"overlapping": "289, 905"
+	},
+	{
+		"code": "380",
+		"state": "Ohio",
+		"overlapping": "614"
+	},
+	{
+		"code": "385",
+		"state": "Utah",
+		"overlapping": "801"
+	},
+	{
+		"code": "386",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "401",
+		"state": "Rhode Island",
+		"overlapping": "None"
+	},
+	{
+		"code": "402",
+		"state": "Nebraska",
+		"overlapping": "531"
+	},
+	{
+		"code": "403",
+		"state": "Alberta",
+		"overlapping": "587, 825"
+	},
+	{
+		"code": "404",
+		"state": "Georgia",
+		"overlapping": "470, 678"
+	},
+	{
+		"code": "405",
+		"state": "Oklahoma",
+		"overlapping": "None"
+	},
+	{
+		"code": "406",
+		"state": "Montana",
+		"overlapping": "None"
+	},
+	{
+		"code": "407",
+		"state": "Florida",
+		"overlapping": "321"
+	},
+	{
+		"code": "408",
+		"state": "California",
+		"overlapping": "669"
+	},
+	{
+		"code": "409",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "410",
+		"state": "Maryland",
+		"overlapping": "443, 667"
+	},
+	{
+		"code": "412",
+		"state": "Pennsylvania",
+		"overlapping": "878"
+	},
+	{
+		"code": "413",
+		"state": "Massachusetts",
+		"overlapping": "None"
+	},
+	{
+		"code": "414",
+		"state": "Wisconsin",
+		"overlapping": "None"
+	},
+	{
+		"code": "415",
+		"state": "California",
+		"overlapping": "628"
+	},
+	{
+		"code": "416",
+		"state": "Ontario",
+		"overlapping": "437, 647"
+	},
+	{
+		"code": "417",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "418",
+		"state": "Quebec",
+		"overlapping": "581"
+	},
+	{
+		"code": "419",
+		"state": "Ohio",
+		"overlapping": "567"
+	},
+	{
+		"code": "423",
+		"state": "Tennessee",
+		"overlapping": "None"
+	},
+	{
+		"code": "425",
+		"state": "Washington",
+		"overlapping": "None"
+	},
+	{
+		"code": "430",
+		"state": "Texas",
+		"overlapping": "903"
+	},
+	{
+		"code": "432",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "434",
+		"state": "Virginia",
+		"overlapping": "None"
+	},
+	{
+		"code": "435",
+		"state": "Utah",
+		"overlapping": "None"
+	},
+	{
+		"code": "437",
+		"state": "Ontario",
+		"overlapping": "416, 647"
+	},
+	{
+		"code": "438",
+		"state": "Quebec",
+		"overlapping": "514"
+	},
+	{
+		"code": "440",
+		"state": "Ohio",
+		"overlapping": "None"
+	},
+	{
+		"code": "441",
+		"state": "Bermuda",
+		"overlapping": "None"
+	},
+	{
+		"code": "443",
+		"state": "Maryland",
+		"overlapping": "410 667"
+	},
+	{
+		"code": "450",
+		"state": "Quebec",
+		"overlapping": "579"
+	},
+	{
+		"code": "456",
+		"state": "Carrier Services: Inbound International",
+		"overlapping": "None"
+	},
+	{
+		"code": "458",
+		"state": "Oregon",
+		"overlapping": "514"
+	},
+	{
+		"code": "463",
+		"state": "Indiana",
+		"overlapping": "317"
+	},
+	{
+		"code": "469",
+		"state": "Texas",
+		"overlapping": "214, 972"
+	},
+	{
+		"code": "470",
+		"state": "Georgia",
+		"overlapping": "404, 678, 770"
+	},
+	{
+		"code": "473",
+		"state": "Grenada",
+		"overlapping": "None"
+	},
+	{
+		"code": "475",
+		"state": "Connecticut",
+		"overlapping": "203"
+	},
+	{
+		"code": "478",
+		"state": "Georgia",
+		"overlapping": "None"
+	},
+	{
+		"code": "479",
+		"state": "Arkansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "480",
+		"state": "Arizona",
+		"overlapping": "None"
+	},
+	{
+		"code": "484",
+		"state": "Pennsylvania",
+		"overlapping": "610"
+	},
+	{
+		"code": "500",
+		"state": "Personal Communications Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "501",
+		"state": "Arkansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "502",
+		"state": "Kentucky",
+		"overlapping": "None"
+	},
+	{
+		"code": "503",
+		"state": "Oregon",
+		"overlapping": "971"
+	},
+	{
+		"code": "504",
+		"state": "Louisiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "505",
+		"state": "New Mexico",
+		"overlapping": "None"
+	},
+	{
+		"code": "506",
+		"state": "New Brunswick",
+		"overlapping": "None"
+	},
+	{
+		"code": "507",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "508",
+		"state": "Massachusetts",
+		"overlapping": "774"
+	},
+	{
+		"code": "509",
+		"state": "Washington",
+		"overlapping": "None"
+	},
+	{
+		"code": "510",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "511",
+		"state": "Nationwide Travel Information",
+		"overlapping": "None"
+	},
+	{
+		"code": "512",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "513",
+		"state": "Ohio",
+		"overlapping": "None"
+	},
+	{
+		"code": "514",
+		"state": "Quebec",
+		"overlapping": "438"
+	},
+	{
+		"code": "515",
+		"state": "Iowa",
+		"overlapping": "None"
+	},
+	{
+		"code": "516",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "517",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "518",
+		"state": "New York",
+		"overlapping": "838"
+	},
+	{
+		"code": "519",
+		"state": "Ontario",
+		"overlapping": "226"
+	},
+	{
+		"code": "520",
+		"state": "Arizona",
+		"overlapping": "None"
+	},
+	{
+		"code": "530",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "531",
+		"state": "Nebraska",
+		"overlapping": "402"
+	},
+	{
+		"code": "533",
+		"state": "Personal Communications Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "534",
+		"state": "Wisconsin",
+		"overlapping": "715"
+	},
+	{
+		"code": "539",
+		"state": "Oklahoma",
+		"overlapping": "918"
+	},
+	{
+		"code": "540",
+		"state": "Virginia",
+		"overlapping": "TODO"
+	},
+	{
+		"code": "541",
+		"state": "Oregon",
+		"overlapping": "458"
+	},
+	{
+		"code": "544",
+		"state": "Personal Communications Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "551",
+		"state": "New Jersey",
+		"overlapping": "201"
+	},
+	{
+		"code": "559",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "561",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "562",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "563",
+		"state": "Iowa",
+		"overlapping": "None"
+	},
+	{
+		"code": "564",
+		"state": "Washington",
+		"overlapping": "360"
+	},
+	{
+		"code": "566",
+		"state": "Personal Communications Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "567",
+		"state": "Ohio",
+		"overlapping": "419"
+	},
+	{
+		"code": "570",
+		"state": "Pennsylvania",
+		"overlapping": "None"
+	},
+	{
+		"code": "571",
+		"state": "Virginia",
+		"overlapping": "703"
+	},
+	{
+		"code": "573",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "574",
+		"state": "Indiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "575",
+		"state": "New Mexico",
+		"overlapping": "None"
+	},
+	{
+		"code": "577",
+		"state": "Personal Communications Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "579",
+		"state": "Quebec",
+		"overlapping": "450"
+	},
+	{
+		"code": "580",
+		"state": "Oklahoma",
+		"overlapping": "None"
+	},
+	{
+		"code": "585",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "586",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "587",
+		"state": "Alberta",
+		"overlapping": "403, 780, 825"
+	},
+	{
+		"code": "600",
+		"state": "Canada Non-Geographic",
+		"overlapping": "None"
+	},
+	{
+		"code": "601",
+		"state": "Mississippi",
+		"overlapping": "769"
+	},
+	{
+		"code": "602",
+		"state": "Arizona",
+		"overlapping": "None"
+	},
+	{
+		"code": "603",
+		"state": "New Hampshire",
+		"overlapping": "None"
+	},
+	{
+		"code": "604",
+		"state": "British Columbia",
+		"overlapping": "236, 778"
+	},
+	{
+		"code": "605",
+		"state": "South Dakota",
+		"overlapping": "None"
+	},
+	{
+		"code": "606",
+		"state": "Kentucky",
+		"overlapping": "None"
+	},
+	{
+		"code": "607",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "608",
+		"state": "Wisconsin",
+		"overlapping": "None"
+	},
+	{
+		"code": "609",
+		"state": "New Jersey",
+		"overlapping": "None"
+	},
+	{
+		"code": "610",
+		"state": "Pennsylvania",
+		"overlapping": "484"
+	},
+	{
+		"code": "612",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "613",
+		"state": "Ontario",
+		"overlapping": "343"
+	},
+	{
+		"code": "614",
+		"state": "Ohio",
+		"overlapping": "380"
+	},
+	{
+		"code": "615",
+		"state": "Tennessee",
+		"overlapping": "629"
+	},
+	{
+		"code": "616",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "617",
+		"state": "Massachusetts",
+		"overlapping": "857"
+	},
+	{
+		"code": "618",
+		"state": "Illinois",
+		"overlapping": "None"
+	},
+	{
+		"code": "619",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "620",
+		"state": "Kansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "623",
+		"state": "Arizona",
+		"overlapping": "None"
+	},
+	{
+		"code": "626",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "628",
+		"state": "California",
+		"overlapping": "415"
+	},
+	{
+		"code": "629",
+		"state": "Tennessee",
+		"overlapping": "615"
+	},
+	{
+		"code": "630",
+		"state": "Illinois",
+		"overlapping": "331"
+	},
+	{
+		"code": "631",
+		"state": "New York",
+		"overlapping": "934"
+	},
+	{
+		"code": "636",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "639",
+		"state": "Saskatchewan",
+		"overlapping": "306"
+	},
+	{
+		"code": "641",
+		"state": "Iowa",
+		"overlapping": "None"
+	},
+	{
+		"code": "646",
+		"state": "New York",
+		"overlapping": "212, 917"
+	},
+	{
+		"code": "647",
+		"state": "Ontario",
+		"overlapping": "416, 437"
+	},
+	{
+		"code": "649",
+		"state": "Turks & Caicos Islands",
+		"overlapping": "None"
+	},
+	{
+		"code": "650",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "651",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "657",
+		"state": "California",
+		"overlapping": "714"
+	},
+	{
+		"code": "660",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "661",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "662",
+		"state": "Mississippi",
+		"overlapping": "None"
+	},
+	{
+		"code": "664",
+		"state": "Montserrat",
+		"overlapping": "None"
+	},
+	{
+		"code": "667",
+		"state": "Maryland",
+		"overlapping": "410, 443"
+	},
+	{
+		"code": "669",
+		"state": "California",
+		"overlapping": "408"
+	},
+	{
+		"code": "670",
+		"state": "Northern Mariana Islands",
+		"overlapping": "None"
+	},
+	{
+		"code": "671",
+		"state": "Guam",
+		"overlapping": "None"
+	},
+	{
+		"code": "678",
+		"state": "Georgia",
+		"overlapping": "404, 470, 770"
+	},
+	{
+		"code": "680",
+		"state": "New York",
+		"overlapping": "315"
+	},
+	{
+		"code": "681",
+		"state": "West Virginia",
+		"overlapping": "304"
+	},
+	{
+		"code": "682",
+		"state": "Texas",
+		"overlapping": "817"
+	},
+	{
+		"code": "684",
+		"state": "American Samoa",
+		"overlapping": "None"
+	},
+	{
+		"code": "700",
+		"state": "Interexchange Carrier Services",
+		"overlapping": "None"
+	},
+	{
+		"code": "701",
+		"state": "North Dakota",
+		"overlapping": "None"
+	},
+	{
+		"code": "702",
+		"state": "Nevada",
+		"overlapping": "725"
+	},
+	{
+		"code": "703",
+		"state": "Virginia",
+		"overlapping": "571"
+	},
+	{
+		"code": "704",
+		"state": "North Carolina",
+		"overlapping": "980"
+	},
+	{
+		"code": "705",
+		"state": "Ontario",
+		"overlapping": "249"
+	},
+	{
+		"code": "706",
+		"state": "Georgia",
+		"overlapping": "762"
+	},
+	{
+		"code": "707",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "708",
+		"state": "Illinois",
+		"overlapping": "None"
+	},
+	{
+		"code": "709",
+		"state": "Newfoundland",
+		"overlapping": "None"
+	},
+	{
+		"code": "710",
+		"state": "US",
+		"overlapping": "None"
+	},
+	{
+		"code": "712",
+		"state": "Iowa",
+		"overlapping": "None"
+	},
+	{
+		"code": "713",
+		"state": "Texas",
+		"overlapping": "281, 346, 832"
+	},
+	{
+		"code": "714",
+		"state": "California",
+		"overlapping": "657"
+	},
+	{
+		"code": "715",
+		"state": "Wisconsin",
+		"overlapping": "534"
+	},
+	{
+		"code": "716",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "717",
+		"state": "Pennsylvania",
+		"overlapping": "223"
+	},
+	{
+		"code": "718",
+		"state": "New York",
+		"overlapping": "347, 917, 929"
+	},
+	{
+		"code": "719",
+		"state": "Colorado",
+		"overlapping": "None"
+	},
+	{
+		"code": "720",
+		"state": "Colorado",
+		"overlapping": "303"
+	},
+	{
+		"code": "724",
+		"state": "Pennsylvania",
+		"overlapping": "878"
+	},
+	{
+		"code": "725",
+		"state": "Nevada",
+		"overlapping": "702"
+	},
+	{
+		"code": "727",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "731",
+		"state": "Tennessee",
+		"overlapping": "None"
+	},
+	{
+		"code": "732",
+		"state": "New Jersey",
+		"overlapping": "848"
+	},
+	{
+		"code": "734",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "740",
+		"state": "Ohio",
+		"overlapping": "220"
+	},
+	{
+		"code": "743",
+		"state": "North Carolina",
+		"overlapping": "336"
+	},
+	{
+		"code": "747",
+		"state": "California",
+		"overlapping": "818"
+	},
+	{
+		"code": "754",
+		"state": "Florida",
+		"overlapping": "954"
+	},
+	{
+		"code": "757",
+		"state": "Virginia",
+		"overlapping": "None"
+	},
+	{
+		"code": "758",
+		"state": "St. Lucia",
+		"overlapping": "None"
+	},
+	{
+		"code": "760",
+		"state": "California",
+		"overlapping": "442"
+	},
+	{
+		"code": "762",
+		"state": "Georgia",
+		"overlapping": "706"
+	},
+	{
+		"code": "763",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "765",
+		"state": "Indiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "767",
+		"state": "Dominica",
+		"overlapping": "None"
+	},
+	{
+		"code": "769",
+		"state": "Mississippi",
+		"overlapping": "601"
+	},
+	{
+		"code": "770",
+		"state": "Georgia",
+		"overlapping": "470, 678"
+	},
+	{
+		"code": "772",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "773",
+		"state": "Illinois",
+		"overlapping": "872"
+	},
+	{
+		"code": "774",
+		"state": "Massachusetts",
+		"overlapping": "608"
+	},
+	{
+		"code": "775",
+		"state": "Nevada",
+		"overlapping": "None"
+	},
+	{
+		"code": "778",
+		"state": "British Columbia",
+		"overlapping": "236, 250, 604"
+	},
+	{
+		"code": "779",
+		"state": "Illinois",
+		"overlapping": "815"
+	},
+	{
+		"code": "780",
+		"state": "Alberta",
+		"overlapping": "587, 825"
+	},
+	{
+		"code": "781",
+		"state": "Massachusetts",
+		"overlapping": "339"
+	},
+	{
+		"code": "782",
+		"state": "Nova Scotia, Prince Edward Island",
+		"overlapping": "902"
+	},
+	{
+		"code": "784",
+		"state": "St. Vincent & the Grenadines",
+		"overlapping": "None"
+	},
+	{
+		"code": "785",
+		"state": "Kansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "786",
+		"state": "Florida",
+		"overlapping": "305"
+	},
+	{
+		"code": "787",
+		"state": "Puerto Rico",
+		"overlapping": "939"
+	},
+	{
+		"code": "800",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "801",
+		"state": "Utah",
+		"overlapping": "385"
+	},
+	{
+		"code": "802",
+		"state": "Vermont",
+		"overlapping": "None"
+	},
+	{
+		"code": "803",
+		"state": "South Carolina",
+		"overlapping": "None"
+	},
+	{
+		"code": "804",
+		"state": "Virginia",
+		"overlapping": "None"
+	},
+	{
+		"code": "805",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "806",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "807",
+		"state": "Ontario",
+		"overlapping": "None"
+	},
+	{
+		"code": "808",
+		"state": "Hawaii",
+		"overlapping": "None"
+	},
+	{
+		"code": "809",
+		"state": "Dominican Republic",
+		"overlapping": "829, 849"
+	},
+	{
+		"code": "810",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "812",
+		"state": "Indiana",
+		"overlapping": "930"
+	},
+	{
+		"code": "813",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "814",
+		"state": "Pennsylvania",
+		"overlapping": "None"
+	},
+	{
+		"code": "815",
+		"state": "Illinois",
+		"overlapping": "779"
+	},
+	{
+		"code": "816",
+		"state": "Missouri",
+		"overlapping": "None"
+	},
+	{
+		"code": "817",
+		"state": "Texas",
+		"overlapping": "682"
+	},
+	{
+		"code": "818",
+		"state": "California",
+		"overlapping": "747"
+	},
+	{
+		"code": "819",
+		"state": "Quebec",
+		"overlapping": "873"
+	},
+	{
+		"code": "825",
+		"state": "Alberta",
+		"overlapping": "403, 587, 780"
+	},
+	{
+		"code": "828",
+		"state": "North Carolina",
+		"overlapping": "None"
+	},
+	{
+		"code": "830",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "831",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "832",
+		"state": "Texas",
+		"overlapping": "281, 346, 713"
+	},
+	{
+		"code": "838",
+		"state": "New York",
+		"overlapping": "518"
+	},
+	{
+		"code": "843",
+		"state": "South Carolina",
+		"overlapping": "854"
+	},
+	{
+		"code": "844",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "845",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "847",
+		"state": "Illinois",
+		"overlapping": "224"
+	},
+	{
+		"code": "848",
+		"state": "New Jersey",
+		"overlapping": "732"
+	},
+	{
+		"code": "850",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "854",
+		"state": "South Carolina",
+		"overlapping": "843"
+	},
+	{
+		"code": "855",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "856",
+		"state": "New Jersey",
+		"overlapping": "None"
+	},
+	{
+		"code": "857",
+		"state": "Massachusetts",
+		"overlapping": "617"
+	},
+	{
+		"code": "858",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "859",
+		"state": "Kentucky",
+		"overlapping": "None"
+	},
+	{
+		"code": "860",
+		"state": "Connecticut",
+		"overlapping": "959"
+	},
+	{
+		"code": "862",
+		"state": "New Jersey",
+		"overlapping": "973"
+	},
+	{
+		"code": "863",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "864",
+		"state": "South Carolina",
+		"overlapping": "None"
+	},
+	{
+		"code": "865",
+		"state": "Tennessee",
+		"overlapping": "None"
+	},
+	{
+		"code": "866",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "867",
+		"state": "Northwest Territories, Nunavut, Yukon",
+		"overlapping": "None"
+	},
+	{
+		"code": "868",
+		"state": "Trinidad &amp; Tobago",
+		"overlapping": "None"
+	},
+	{
+		"code": "869",
+		"state": "St. Kitts & Nevis",
+		"overlapping": "None"
+	},
+	{
+		"code": "870",
+		"state": "Arkansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "872",
+		"state": "Illinois",
+		"overlapping": "312, 773"
+	},
+	{
+		"code": "873",
+		"state": "Quebec",
+		"overlapping": "819"
+	},
+	{
+		"code": "876",
+		"state": "Jamaica",
+		"overlapping": "None"
+	},
+	{
+		"code": "878",
+		"state": "Pennsylvania",
+		"overlapping": "412, 724"
+	},
+	{
+		"code": "880",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "881",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "882",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "888",
+		"state": "Toll Free",
+		"overlapping": "None"
+	},
+	{
+		"code": "900",
+		"state": "Pay Per Call",
+		"overlapping": "None"
+	},
+	{
+		"code": "901",
+		"state": "Tennessee",
+		"overlapping": "None"
+	},
+	{
+		"code": "902",
+		"state": "Nova Scotia, Price Edward Island",
+		"overlapping": "782"
+	},
+	{
+		"code": "903",
+		"state": "Texas",
+		"overlapping": "403"
+	},
+	{
+		"code": "904",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "905",
+		"state": "Ontario",
+		"overlapping": "289, 365"
+	},
+	{
+		"code": "906",
+		"state": "Michigan",
+		"overlapping": "None"
+	},
+	{
+		"code": "907",
+		"state": "Alaska",
+		"overlapping": "None"
+	},
+	{
+		"code": "908",
+		"state": "New Jersey",
+		"overlapping": "New Jersey"
+	},
+	{
+		"code": "909",
+		"state": "California",
+		"overlapping": "California"
+	},
+	{
+		"code": "910",
+		"state": "North Carolina",
+		"overlapping": "None"
+	},
+	{
+		"code": "912",
+		"state": "Georgia",
+		"overlapping": "None"
+	},
+	{
+		"code": "913",
+		"state": "Kansas",
+		"overlapping": "None"
+	},
+	{
+		"code": "914",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "915",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "916",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "917",
+		"state": "New York",
+		"overlapping": "212, 347, 646, 718, 929"
+	},
+	{
+		"code": "918",
+		"state": "Oklahoma",
+		"overlapping": "539"
+	},
+	{
+		"code": "919",
+		"state": "North Carolina",
+		"overlapping": "984"
+	},
+	{
+		"code": "920",
+		"state": "Wisconsin",
+		"overlapping": "None"
+	},
+	{
+		"code": "925",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "927",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "928",
+		"state": "Arizona",
+		"overlapping": "None"
+	},
+	{
+		"code": "929",
+		"state": "New York",
+		"overlapping": "347, 718, 917"
+	},
+	{
+		"code": "930",
+		"state": "Indiana",
+		"overlapping": "812"
+	},
+	{
+		"code": "931",
+		"state": "Tennessee",
+		"overlapping": "631"
+	},
+	{
+		"code": "934",
+		"state": "New York",
+		"overlapping": "None"
+	},
+	{
+		"code": "936",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "937",
+		"state": "Ohio",
+		"overlapping": "None"
+	},
+	{
+		"code": "938",
+		"state": "Alabama",
+		"overlapping": "256"
+	},
+	{
+		"code": "939",
+		"state": "Puerto Rico",
+		"overlapping": "787"
+	},
+	{
+		"code": "940",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "941",
+		"state": "Florida",
+		"overlapping": "None"
+	},
+	{
+		"code": "947",
+		"state": "Michigan",
+		"overlapping": "248"
+	},
+	{
+		"code": "949",
+		"state": "California",
+		"overlapping": "None"
+	},
+	{
+		"code": "952",
+		"state": "Minnesota",
+		"overlapping": "None"
+	},
+	{
+		"code": "954",
+		"state": "Florida",
+		"overlapping": "754"
+	},
+	{
+		"code": "956",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "959",
+		"state": "Connecticut",
+		"overlapping": "860"
+	},
+	{
+		"code": "970",
+		"state": "Colorado",
+		"overlapping": "None"
+	},
+	{
+		"code": "971",
+		"state": "Oregon",
+		"overlapping": "503"
+	},
+	{
+		"code": "972",
+		"state": "Texas",
+		"overlapping": "214, 469"
+	},
+	{
+		"code": "973",
+		"state": "New Jersey",
+		"overlapping": "862"
+	},
+	{
+		"code": "978",
+		"state": "Massachusetts",
+		"overlapping": "351"
+	},
+	{
+		"code": "979",
+		"state": "Texas",
+		"overlapping": "None"
+	},
+	{
+		"code": "980",
+		"state": "North Carolina",
+		"overlapping": "704"
+	},
+	{
+		"code": "985",
+		"state": "Louisiana",
+		"overlapping": "None"
+	},
+	{
+		"code": "989",
+		"state": "Michigan",
+		"overlapping": "None"
+	}
+]

@@ -15,3 +15,6 @@ def speechRecognize(filename="output.wav"):
         return text
     except sr.UnknownValueError:
         print("ERROR -- No Speech found")
+
+print("I think it says...")
+print(speechRecognize())
