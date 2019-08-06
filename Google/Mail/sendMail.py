@@ -61,7 +61,9 @@ def sendMail(alias, fromAddr, pw, toaddr, subject="", message="", AttchFileList=
 
     # Try to login to the mail service
     try:
-        s.login(fromAddr, pw)  # do not turn on 2FA for this to work
+        # do not turn on 2FA for this to work
+        # may need to 'Allow less secure apps' at https://myaccount.google.com/lesssecureapps?pli=1
+        s.login(fromAddr, pw)
     except smtplib.SMTPAuthenticationError:
         print("Invalid username or password. Aborting Sending.")
         return
@@ -78,13 +80,13 @@ def sendMail(alias, fromAddr, pw, toaddr, subject="", message="", AttchFileList=
 
 if __name__ == '__main__':
     fromAlias = "FROM ALIAS"
-    fromAddr = "FROM ADDRESS"
-    fromPW = "FROM PASSWORD"
-    toAddr = "TO ADDRESS"
-    subject = "SUBJECT"
-    message = "MESSAGE"
-    fileList = [FILES]
-    folderList = [FOLDERS]
+    fromAddr = "yourEmail@mailService.com"
+    fromPW = "yourMailPassword"
+    toAddr = "IntendedRecipient@mailService.com"
+    subject = "Email Subject"
+    message = "Email massage body"
+    fileList = ["List of files to attach seperately"]
+    folderList = [] #["List of folders to attach as .zip"]#[FOLDERS]
     
     sendMail(fromAlias,  # From alias
              fromAddr,  # From address

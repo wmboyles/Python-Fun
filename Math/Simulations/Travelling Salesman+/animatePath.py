@@ -32,7 +32,7 @@ def extremes(points):
     return (minX, minY, maxX, maxY)
 
 
-# Makes a canvas o certain color from extremes
+# Makes a canvas of a certain color from extremes
 def makeCanvas(extr, color):
     screen = Screen()
     screen.colormode(255)
