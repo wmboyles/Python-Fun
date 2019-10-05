@@ -19,7 +19,7 @@ def regPolygon(t, sides, sl, fill):
     t.end_fill()
 
     
-def Star(t, points, sl, fill):
+def star(t, points, sl, fill):
     if fill == True: t.begin_fill()
     if points == 3 or points == 4: regPolygon(t, points, sl, fill)
     else:
@@ -29,6 +29,15 @@ def Star(t, points, sl, fill):
             t.lt(360 / points)  # 3->60, 4->90, 5->72, 6->60, 8->45
             t.fd(sl)
             t.rt(720 / points)
+    t.end_fill()
+
+def pentagram(t, points, sl, fill):
+    if fill: t.begin_fill()
+    if points == 3 or points == 4: regPolygon(t, points, sl, fill)
+    else:
+        for i in range(points):
+            t.fd(sl)
+            t.rt((360 - 360/(points))/2)
     t.end_fill()
 
 
@@ -91,5 +100,7 @@ def myArt3(a):
 
     
 a.speed(0)
-myArt3(a)
+for i in range(3,10):
+    a.color(colors[i%6])
+    pentagram(a,i,300,False)
 

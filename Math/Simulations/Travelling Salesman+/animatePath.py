@@ -75,5 +75,5 @@ def main(size):
 
 if __name__ == '__main__':
     while True:
-        main(7)
+        main(9)
         sleep(1)
