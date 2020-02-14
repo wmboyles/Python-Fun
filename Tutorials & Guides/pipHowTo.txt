@@ -1,8 +1,0 @@
-how to install python modules
-
-1) Make sure that Python is a path by going to Control Panel\System and Security\System\Advanced Settings\Advanced\Enviroment Variables
-   and clicking on path\edit to see the current version of python listed.
-
-	1a) You can test this by typing "python" or "py" (one of these will work, probably "py") into the command prompt.
-
-2) In cmd, go to C:\Users\willi\Python36-32\Scripts. And type "py -m pip install [Module Name]"

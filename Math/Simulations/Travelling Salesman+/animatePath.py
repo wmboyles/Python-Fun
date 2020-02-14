@@ -66,7 +66,7 @@ def plotRoute(route, col, closed=True):
     hideturtle()
 
 
-def main(size):
+def main(size=8):
     clear()
     animatePath(paths.sorted(size))
     onkey(main, "Up")
@@ -74,6 +74,4 @@ def main(size):
 
 
 if __name__ == '__main__':
-    while True:
-        main(9)
-        sleep(1)
+    main()

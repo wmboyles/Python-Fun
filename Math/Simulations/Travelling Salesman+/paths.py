@@ -19,7 +19,9 @@ def random(n):
 
 # returns a path with the points in Nearest-Neighbor order
 # This way is faster for plotting than random ordered points
-def sorted(n): return NN(random(n))
+def sorted(n):
+    return NN(random(n))
+    # return [(0,3),(1,1),(3,0),(1,-1),(0,-3),(-1,-1),(-3,0),(-1,1)]
 
 
 # Gives a path such that every point is directly connected to every other

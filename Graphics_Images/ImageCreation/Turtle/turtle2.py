@@ -103,4 +103,4 @@ a.speed(0)
 for i in range(3,10):
     a.color(colors[i%6])
     pentagram(a,i,300,False)
-
+input()
